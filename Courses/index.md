@@ -6,5 +6,3 @@
 
 ### Self Taught Courses
 
-
-
