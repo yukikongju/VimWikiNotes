@@ -7,19 +7,21 @@
 - [Computer Systems Resources](Computer Systems Resources)
 - Operating Systems Resources
 - Languages and Compilers Resources
-- Computer Architecture Resources
+- [Computer Architecture Resources](Computer Architecture Resources)
 - [Database Systems Resources](Database Systems Resources)
 - Network and Communications Resources
-- Distributed Systems Resources
+- [Distributed Systems Resources](Distributed Systems Resources)
 
 ### Specialization
 
 - [Computer Graphics Resources](Computer Graphics Resources)
-- AI and ML Resources
-- Data Science Resources
+- [AI and ML Resources](AI and ML Resources)
+- [Data Science Resources](Data Science Resources)
 - Computer Security Resources
-- Computer Vision
+- [Computer Vision](Computer Vision)
 - [Human Computer Interaction Ressources](Human Computer Interaction Ressources)
+- [Bioinformatic Resources](Bioinformatic Resources)
+- Quantitative Analysis Resources
 
 ### Ressources
 

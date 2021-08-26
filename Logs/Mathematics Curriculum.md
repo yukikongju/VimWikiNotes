@@ -22,3 +22,4 @@
 ## Miscellaneous Classes
 
 - History of Maths
+- [Famous Maths Problems Resources](Famous Maths Problems Resources)

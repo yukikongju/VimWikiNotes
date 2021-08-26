@@ -7,6 +7,7 @@
 - Lecture Notes:
 - Slides:
 - Video Lectures: [Topics in Analysis by James Cook](https://www.youtube.com/playlist?list=PLBY4G2o7DhF2VZ9vGFgdap7Gpt-Tm3w3x)
+- Video Lectures: [Real Analysis 1 - Xiojing Ye](https://www.youtube.com/playlist?list=PLd7xu1NOxUDb90o3rJvwkcrAUwS1Hrs6o)
 - Book: How to think about Analysis by Lara Alcock
 - Textbook: Elementary Analysis by Kenneth Ross
 - Exercices (easy): Schaum's Advanced Calculus (proofs for theorems)
@@ -18,7 +19,7 @@
 
 - Lecture Notes:
 - Slides:
-- Video Lectures:
+- Video Lectures:  [Real Analysis 2 - Xiojing Ye](https://www.youtube.com/playlist?list=PLd7xu1NOxUDbBP9uSgrwGM4XaJzYaGFGr)
 - Textbook:
 - Projects:
 - Exercices:

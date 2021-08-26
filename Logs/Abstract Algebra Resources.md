@@ -1,5 +1,17 @@
 # Abstract Algebra Resources
 
+### Group Theory
+
+ Concepts VISUAL
+
+- Lecture Notes:
+- Slides:
+- Video Lectures: [Visual Group Theory - Matthew Macauley](https://www.youtube.com/playlist?list=PLwV-9DG53NDxU337smpTwm6sef4x-SCLv)
+- Textbook:
+- Projects:
+- Exercices:
+- Exams:
+
 ### Abstract Algebra I
 
 - Lecture Notes:
