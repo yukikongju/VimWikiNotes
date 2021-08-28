@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-08-27" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>Hackaday - Architecture, Assembly and Reverse Engineering - Class 5</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>Hackaday - Architecture, Assembly and Reverse Engineering - Class 5</h1>
+<h3>Overview</h3>
+<ol>
+<li>Data Space vs I/O Space</li>
+<li>Port and Pins helper methods with <avr/io.h> and _SFR_IO_ADDR</li>
+<li>Working with MAX7219</li>
+</ol>
+<h3>Part 1 - Data Space vs I/O Space</h3>
+<h3>Part 2 - Port and Pins helper methods with <avr/io.h> and _SFR_IO_ADDR</h3>
+<p>Rappel 1: <code>mov r18, 0x55</code> is equivalent to <code>sts 18, 0x55</code>
+Rappel 2: In <code>.ino</code> file, <code>PORTD = 0xff</code> make all pins behave similrly</p>
+<p>Instead of referencing port by their addresses by looking it up in the documentation, we can use <code>&lt;avr/io.h&gt;</code> and <code>_SFR_IO_ADDR()</code></p>
+<p>Without: <code>&lt;avr/io.h&gt;</code></p>
+<div class="codehilite"><pre><span></span><code>sts 0x2b, r24
+</code></pre></div>
+
+<p>With: <code>&lt;avr/io.h&gt;</code></p>
+<div class="codehilite"><pre><span></span><code>sts PORTD, r24 /* PORTD = 0x2b */
+sts _SFR_IO_ADDR(PORTD), r24
+</code></pre></div>
+
+<h3>Part 3 - Working with MAX7219</h3>
+<p>In the setup, we have <code>SPI.begin()</code>. We only have to edit loop().</p>
+<p>In the loop, we define a <code>transaction</code>, which make a block of LED blinks or not. For each transaction, we send 2 bytes: the first one select the row; the second one select the pins in the row.</p>
+<p>To start a transaction, we must set the pin to low; to end a transaction, we must set it to high.</p>
+<div class="codehilite"><pre><span></span><code><span class="nv">void</span> <span class="nv">setup</span><span class="ss">()</span>{
+    <span class="nv">SPI</span>.<span class="nv">begin</span><span class="ss">()</span><span class="c1">;</span>
+}
+
+<span class="nv">void</span> <span class="k">loop</span><span class="ss">()</span> {
+    <span class="o">//</span> <span class="nv">start</span> <span class="nv">transaction</span>
+    <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">PIN</span>, <span class="nv">LOW</span><span class="ss">)</span><span class="c1">; // start transaction</span>
+    <span class="nv">SPI</span>.<span class="nv">transfer</span><span class="ss">(</span><span class="mi">2</span><span class="ss">)</span>:        <span class="o">//</span> <span class="nv">select</span> <span class="nv">second</span> <span class="nv">row</span>
+    <span class="nv">SPI</span>.<span class="nv">transfer</span><span class="ss">(</span><span class="mi">0</span><span class="nv">xff</span><span class="ss">)</span><span class="c1">;     // light entire row</span>
+    <span class="nv">digitalWrite</span><span class="ss">(</span><span class="nv">PIN</span>, <span class="nv">HIGH</span><span class="ss">)</span><span class="c1">; // end transaction</span>
+}
+</code></pre></div>
+
+<h3>Part 4 - Simon Says in Assembly</h3>
+
+    </body>
+</html>

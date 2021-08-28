@@ -1,5 +1,15 @@
 # AI and ML Resources
 
+### Mathematics of Big Data and Machine Learning
+
+- Lecture Notes:
+- Slides: [MIT RES.LL-005 - Mathematics of Big Data and Machine Learning](https://ocw.mit.edu/resources/res-ll-005-mathematics-of-big-data-and-machine-learning-january-iap-2020/lecture-notes/)
+- Video Lectures: [MIT RES.LL-005 - Mathematics of Big Data and Machine Learning](https://www.youtube.com/playlist?list=PLUl4u3cNGP62uI_DWNdWoIMsgPcLGOx-V)
+- Textbook:
+- Projects:
+- Exercices:
+- Exams:
+
 ### Artificial Intelligence
 
  ``Concepts: ``
@@ -37,6 +47,7 @@
 
 ### Deep Learning and Neural Networks
 
+- Lecture Notes: [IFT6085 - Theoretical principles for deep learning](http://mitliagkas.github.io/ift6085-dl-theory-class/)
 - Lecture Notes: [CMU 11-785 - Introduction to Deep Learning](https://deeplearning.cs.cmu.edu/F20/index.html)
 - Video Lectures: [CMU 11-785 - Introduction to Deep Learning](https://www.youtube.com/playlist?list=PLp-0K3kfddPzCnS4CqKphh-zT3aDwybDe)
 - Video Lectures: [MIT 6.S191](https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI)
@@ -71,6 +82,16 @@
 - Lecture Notes: [Reinforcement Learning - David Silver](https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver)
 - Slides:
 - Video Lectures: [Reinforcement Learning - David Silver](https://www.youtube.com/playlist?list=PLqYmG7hTraZBiG_XpjnPrSNw-1XQaM_gB)
+- Textbook:
+- Projects:
+- Exercices:
+- Exams:
+
+### Game Theory for Machine Learning
+
+- Lecture Notes: [IFT3756 - Theorie des Jeux pour l'apprentissage machine](https://gauthiergidel.github.io/courses/game_theory_ML_2021.html)
+- Slides:
+- Video Lectures:
 - Textbook:
 - Projects:
 - Exercices:

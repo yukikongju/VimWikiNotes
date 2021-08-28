@@ -41,3 +41,24 @@
 - Projects:
 - Exercices:
 - Exams:
+
+### Complexity Theory I
+
+- Lecture Notes: [CMU 15-251 - Great Ideas in Theoritical Computer Science](http://www.cs.cmu.edu/~15251/schedule.html)
+- Lecture Notes: [Ryan O'Donnell CS Theory Toolkit](http://www.cs.cmu.edu/~odonnell/papers/cs-theory-toolkit-lecture-notes.pdf)
+- Slides:
+- Video Lectures: [CMU 15-251 - Undergrad Complexity Theory](https://www.youtube.com/playlist?list=PLm3J0oaFux3YL5vLXpzOyJiLtqLp6dCW2)
+- Textbook:
+- Projects:
+- Exercices:
+- Exams:
+
+### Complexity Theory II
+
+- Lecture Notes: [CMU 15-885 - Graduate Computational Complexity Theory](http://www.cs.cmu.edu/~odonnell/complexity17/odonnell-graduate-complexity-notes.pdf)
+- Slides: [CMU 15-885 - Graduate Computational Complexity Theory](http://www.cs.cmu.edu/~odonnell/complexity17/)
+- Video Lectures: [CMU 15-885 - Graduate Computational Complexity Theory](https://www.youtube.com/playlist?list=PLm3J0oaFux3b8Gg1DdaJOzYNsaXYLAOKH)
+- Textbook:
+- Projects:
+- Exercices:
+- Exams:

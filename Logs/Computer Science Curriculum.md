@@ -5,7 +5,7 @@
 - [Programming Resources](Programming Resources)
 - [Data Structure and Algorithms Resources](Data Structure and Algorithms Resources)
 - [Computer Systems Resources](Computer Systems Resources)
-- Operating Systems Resources
+- [Operating Systems Resources](Operating Systems Resources)
 - Languages and Compilers Resources
 - [Computer Architecture Resources](Computer Architecture Resources)
 - [Database Systems Resources](Database Systems Resources)
@@ -17,11 +17,18 @@
 - [Computer Graphics Resources](Computer Graphics Resources)
 - [AI and ML Resources](AI and ML Resources)
 - [Data Science Resources](Data Science Resources)
-- Computer Security Resources
+- [Computer Security Resources](Computer Security Resources)
 - [Computer Vision](Computer Vision)
 - [Human Computer Interaction Ressources](Human Computer Interaction Ressources)
 - [Bioinformatic Resources](Bioinformatic Resources)
 - Quantitative Analysis Resources
+- [Quantum Computation Resources](Quantum Computation Resources)
+- [Autonomous Driving Ressources](Autonomous Driving Ressources)
+- [Software Engineering Resources](Software Engineering Resources)
+- [Embedded Systems Resources](Embedded Systems Resources)
+- [Cryptocurrency Resources](Cryptocurrency Resources)
+- [Game Development Resources](Game Development Resources)
+- [Web Development Resources](Web Development Resources)
 
 ### Ressources
 

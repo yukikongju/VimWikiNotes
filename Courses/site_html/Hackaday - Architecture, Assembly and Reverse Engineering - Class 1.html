@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-08-27" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>Hackaday - Architecture, Assembly and Reverse Engineering - Class 1</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h2>Hackaday - Architecture, Assembly and Reverse Engineering - Class 1</h2>
+<h3>Overview</h3>
+<p>This class introduces us to Aduino in two ways: using Arduino functions and using bit registers. We saw 3 sections:
+1. Registers
+2. Interrupts
+3. Timers</p>
+<p>All the code will be written using the Wokwi Arduino Simulator</p>
+<h3>Part 1 - Registers</h3>
+<p>AVR contains 2 memory space: Data Memory Register and Program Memory register. The former store the data whilst the latter store the pointers.</p>
+<p>We can work with Arduino functions: <code>Serial.begin()</code> and <code>digitalWrite()</code>. However, we would like to use registers to write our code. Instead of referencing PINS, we want to reference ports. According to the documentation (section 14), each pins can be mapped to its port.</p>
+<p>We can look at Arduino datasheet to check pins and port equivalence. For example, pin D13 correspond to PB5. We can then look at AVR documentation to see how to map PB5 to registers.</p>
+<p>To see address of variable: <code>Serial.println((int) &amp;value, HEX/BIN);</code></p>
+<p>We can also define DDRD so that we can control all the LED at the same time:
+<code>DDRD = 0b11111111;</code></p>
+<p>Remarks:
+- <code>Serial.println(bit(7), BIN);</code> is equivalent to <code>Serial.println(136, BIN);</code>
+- <code>DDRB = bit(5);</code> is equivalent to <code>pinMode(LED_BUILTIN, OUTPUT);</code>
+- <code>bitSet(PORTB, 5);</code> is equivalent to <code>digitalWrite(LED_BUILTIN, HIGH);</code>
+- <code>bitClear(PORTB, 5);</code> is equivalent to <code>digitalWrite(LED_BUILTIN, LOW);</code></p>
+<h5>Example: LED Blink</h5>
+<h6>Arduino Environment Code</h6>
+<div class="codehilite"><pre><span></span><code><span class="kr">void</span> <span class="nb">setup</span><span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// initialize digital pin LED_BUILTIN as an output.</span>
+    <span class="nf">pinMode</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span> <span class="kr">OUTPUT</span><span class="p">);</span>
+    <span class="nf">Serial</span><span class="p">.</span><span class="nf">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// the loop function runs over and over again forever</span>
+<span class="kr">void</span> <span class="nb">loop</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nf">digitalWrite</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span> <span class="kr">HIGH</span><span class="p">);</span>   <span class="c1">// turn the LED on (HIGH is the voltage level)</span>
+    <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>                       <span class="c1">// wait for a second</span>
+  <span class="nf">digitalWrite</span><span class="p">(</span><span class="kr">LED_BUILTIN</span><span class="p">,</span> <span class="kr">LOW</span><span class="p">);</span>    <span class="c1">// turn the LED off by making the voltage LOW</span>
+  <span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>                       <span class="c1">// wait for a second</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h6>Registers Code</h6>
+<div class="codehilite"><pre><span></span><code><span class="nv">void</span> <span class="nv">setup</span><span class="ss">()</span> {
+    <span class="nv">DDRB</span> <span class="o">=</span> <span class="nv">bit</span><span class="ss">(</span><span class="mi">5</span><span class="ss">)</span><span class="c1">;</span>
+}
+
+<span class="nv">void</span> <span class="k">loop</span><span class="ss">()</span> {
+    <span class="nv">bitSet</span><span class="ss">(</span><span class="nv">PORTB</span>, <span class="mi">5</span><span class="ss">)</span><span class="c1">;</span>
+    <span class="nv">delay</span><span class="ss">(</span><span class="mi">1000</span><span class="ss">)</span><span class="c1">;</span>
+    <span class="nv">bitClear</span><span class="ss">(</span><span class="nv">PORTB</span>, <span class="mi">5</span><span class="ss">)</span><span class="c1">;</span>
+    <span class="nv">delay</span><span class="ss">(</span><span class="mi">1000</span><span class="ss">)</span><span class="c1">;</span>
+}
+</code></pre></div>
+
+<h3>Part 2 - Interrupts</h3>
+<p>Interrupts are what controls the instructions we give to the arduino. We can use the functions <code>sei()</code> and <code>cli()</code> to enable and disable interrupts. It should be noted that interrupts are initially enabled.</p>
+<h5>Example: Liquid Crystal Switch Interrupts</h5>
+<h3>Part 3 - Timers</h3>
+<p>We can control clock speed using <code>TCCR1A()</code>, <code>TCCCR1B()</code>, <code>TCCR1C</code></p>
+<h3>Ressources</h3>
+<ul>
+<li><a href="https://www.tme.com/Document/96b6778db42cd7ee25e95be3e9a8b195/atmegaxx8apa.pdf">AVR ATmega48A Documentation</a></li>
+</ul>
+
+    </body>
+</html>

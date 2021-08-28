@@ -13,11 +13,17 @@
 - [Topology Resources](Topology Resources)
 - Differential Geometry Resources
 
+## Specialization
+- [Optimization Resources](Optimization Resources)
+- [Financial Mathematics Resources](Financial Mathematics Resources)
+- [Game Theory Resources](Game Theory Resources)
+
 ## Grad Classes
 
-- Galois Theory
-- Algebraic Geometry
-- Lie Theory
+- Galois Theory Resources
+- Algebraic Geometry Resources
+- Lie Theory Resources
+- [Tensor Calculus Resources](Tensor Calculus Resources)
 
 ## Miscellaneous Classes
 

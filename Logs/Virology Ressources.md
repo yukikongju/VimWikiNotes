@@ -9,3 +9,13 @@
 - Projects:
 - Exercices:
 - Exams:
+
+### Transmission
+
+- Lecture Notes:
+- Slides:
+- Video Lectures: [MIT Physics of COVID-19 Transmission](https://www.youtube.com/playlist?list=PLUl4u3cNGP62-vPzt_GMdZRflJPjNdspG)
+- Textbook:
+- Projects:
+- Exercices:
+- Exams:

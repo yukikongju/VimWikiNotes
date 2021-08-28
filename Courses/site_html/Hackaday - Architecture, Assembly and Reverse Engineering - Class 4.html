@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-08-27" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>Hackaday - Architecture, Assembly and Reverse Engineering - Class 4</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h2>Hackaday - Architecture, Assembly and Reverse Engineering - Class 4</h2>
+<h3>Overview</h3>
+<ol>
+<li>Example - Fibonacci</li>
+<li>View Assembly Compiled Code</li>
+<li>Debuging with GDB</li>
+</ol>
+<h3>Part 1 - Fibonacci in Assembly</h3>
+<h6>arduino.ino</h6>
+<div class="codehilite"><pre><span></span><code>#<span class="nv">define</span> <span class="nv">LED</span> <span class="mi">1</span>
+
+<span class="nv">extern</span> <span class="s2">&quot;</span><span class="s">C</span><span class="s2">&quot;</span> <span class="nv">uint8_t</span> <span class="nv">fibo</span><span class="ss">(</span><span class="nv">uint8_t</span> <span class="nv">number</span><span class="ss">)</span><span class="c1">;</span>
+
+<span class="nv">void</span> <span class="nv">setup</span><span class="ss">()</span> {
+  <span class="nv">Serial</span>.<span class="nv">begin</span><span class="ss">(</span><span class="mi">115200</span><span class="ss">)</span><span class="c1">;</span>
+
+<span class="o">//</span> <span class="nv">print</span> <span class="nv">the</span> <span class="nv">first</span> <span class="mi">10</span> <span class="nv">fibonacci</span> <span class="nv">numbers</span>
+  <span class="k">for</span><span class="ss">(</span><span class="nv">int</span> <span class="nv">i</span><span class="o">=</span><span class="mi">0</span><span class="c1">; i&lt;10 ; i++){</span>
+      <span class="nv">Serial</span>.<span class="nv">println</span><span class="ss">(</span><span class="nv">fibo</span><span class="ss">(</span><span class="nv">i</span><span class="ss">))</span><span class="c1">;</span>
+  }
+
+}
+
+<span class="nv">void</span> <span class="k">loop</span><span class="ss">()</span> {
+}
+</code></pre></div>
+
+<h6>assembly.S</h6>
+<div class="codehilite"><pre><span></span><code><span class="p">;</span> <span class="n">arg1</span><span class="o">:</span> <span class="n">r24</span><span class="p">,</span> <span class="n">result</span><span class="o">:</span> <span class="n">r24</span>
+<span class="p">;</span> <span class="n">if</span> <span class="n">n</span><span class="o">==</span><span class="m">0</span> <span class="n">return</span> <span class="m">0</span>
+<span class="p">;</span> <span class="n">if</span> <span class="n">n</span><span class="o">==</span><span class="m">1</span> <span class="n">return</span> <span class="m">1</span>
+<span class="p">;</span> <span class="nf">fibo</span><span class="p">(</span><span class="n">n</span><span class="m">-1</span><span class="p">)</span>
+<span class="p">;</span> <span class="nf">fibo</span><span class="p">(</span><span class="n">n</span><span class="m">-2</span><span class="p">)</span>
+<span class="p">;</span> <span class="n">return</span> <span class="nf">fibo</span><span class="p">(</span><span class="n">n</span><span class="m">-1</span><span class="p">)</span><span class="o">+</span><span class="nf">fibo</span><span class="p">(</span><span class="n">n</span><span class="m">-2</span><span class="p">)</span>
+<span class="n">.global</span> <span class="n">fibo</span>
+<span class="n">fibo</span><span class="o">:</span>
+  <span class="n">cpi</span> <span class="n">r24</span><span class="p">,</span> <span class="m">0</span>
+  <span class="n">breq</span> <span class="m">1</span><span class="n">f</span>
+  <span class="n">cpi</span> <span class="n">r24</span><span class="p">,</span> <span class="m">1</span>
+  <span class="n">breq</span> <span class="m">1</span><span class="n">f</span>
+  <span class="n">dec</span> <span class="n">r24</span>
+  <span class="n">push</span> <span class="n">r24</span>      <span class="p">;</span> <span class="p">(</span><span class="n">n</span><span class="m">-1</span><span class="p">)</span>
+  <span class="n">call</span> <span class="n">fibo</span>
+  <span class="n">mov</span> <span class="n">r18</span><span class="p">,</span> <span class="n">r24</span>  <span class="p">;</span> <span class="n">copy</span> <span class="nf">fibo</span><span class="p">(</span><span class="n">n</span><span class="m">-1</span><span class="p">)</span> <span class="n">into</span> <span class="n">r18</span>
+  <span class="n">pop</span> <span class="n">r24</span>       <span class="p">;</span> <span class="p">(</span><span class="n">n</span><span class="m">-1</span><span class="p">)</span>
+  <span class="n">push</span> <span class="n">r18</span>      <span class="p">;</span> <span class="n">save</span> <span class="nf">fibo</span><span class="p">(</span><span class="n">n</span><span class="m">-1</span><span class="p">)</span> <span class="n">in</span> <span class="n">the</span> <span class="n">stack</span>
+  <span class="n">dec</span> <span class="n">r24</span>       <span class="p">;</span> <span class="p">(</span><span class="n">n</span><span class="m">-2</span><span class="p">)</span>
+  <span class="n">call</span> <span class="n">fibo</span>     <span class="p">;</span> <span class="n">r24</span> <span class="o">&lt;-</span> <span class="nf">fibo</span><span class="p">(</span><span class="n">n</span><span class="m">-2</span><span class="p">)</span>
+  <span class="n">pop</span> <span class="n">r23</span>       <span class="p">;</span> <span class="nf">fibo</span><span class="p">(</span><span class="n">n</span><span class="m">-1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">WHY</span> <span class="n">IS</span> <span class="n">IT</span> <span class="n">IN</span> <span class="n">r23</span><span class="o">????:</span> <span class="n">pop</span> <span class="n">the</span> <span class="n">stack</span> <span class="n">and</span> <span class="n">store</span> <span class="n">it</span> <span class="n">in</span> <span class="n">r23</span>
+  <span class="n">add</span> <span class="n">r24</span><span class="p">,</span> <span class="n">r23</span>  <span class="p">;</span> <span class="nf">fibo</span><span class="p">(</span><span class="n">n</span><span class="m">-2</span><span class="p">)</span> <span class="o">+</span> <span class="nf">fibo</span><span class="p">(</span><span class="n">n</span><span class="m">-1</span><span class="p">)</span>
+<span class="m">1</span><span class="o">:</span>
+  <span class="n">ret</span>
+</code></pre></div>
+
+<h3>Part 2 - Reading Assembly Compiled Code</h3>
+<p>We can view our compiled code with <code>avr-objdump</code> or with wokwi <code>&lt;F1&gt; Assembly Compiled Code</code></p>
+<p>Remarks:
+- If we iterate for less than 5 iterations, the wokwi compiler unroll the instructions. It only creates a loop for 6+ iterations.</p>
+<h3>Part 3 - Debuging with GDB</h3>
+<p>To run debuger in wokwi, run <code>&lt;F1&gt; gdb (release build)</code></p>
+<p>To see all gdb command: <a href="https://blog.wokwi.com/gdb-avr-arduino-cheatsheet/">Arduino/AVR GDB Cheat Sheet</a>
+Useful Commands:
+- list <funct>:
+- backtrace:
+- layout asm: popup window to scroll code
+- layout split: view compiled code and C code
+- focus next: change window
+- next/step/nexti
+- print $r0: print register
+- info breaks</p>
+<h3>Ressources</h3>
+<ul>
+<li><a href="https://blog.wokwi.com/gdb-avr-arduino-cheatsheet/">Arduino/AVR GDB Cheat Sheet</a></li>
+</ul>
+
+    </body>
+</html>

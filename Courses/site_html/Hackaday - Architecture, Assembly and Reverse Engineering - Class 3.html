@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-08-27" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>Hackaday - Architecture, Assembly and Reverse Engineering - Class 3</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>Hackaday - Architecture, Assembly and Reverse Engineering - Class 3</h1>
+<h3>Overview</h3>
+<p>There are n parts to this class:
+1. Assembly Instructions - More Instructions
+2. Assembly Instructions - Conditional Branches
+3. Importing Assembly file in Arduino</p>
+<h3>Part 1 - Assembly Instructions</h3>
+<ul>
+<li>INC / DEC</li>
+<li>LSL / LSR (Shift right / left)</li>
+<li>COM (bitwise not) - as opposed to NEG (negate, 2’s comp)</li>
+<li>SWAP (nibbles)</li>
+<li>SBR / CBR (set / clear bits)</li>
+<li>ADD / SUB</li>
+<li>AND / OR / EOR (xor) - bitwise operations</li>
+<li>CP - Compare two registers</li>
+<li>BRSH (and other branches)</li>
+<li>CPI - Compare with Immediate</li>
+<li>CALL / RET</li>
+<li>SBIW (bonus) - Subtract Immediate from Word</li>
+</ul>
+<p>Template:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">asm</span><span class="p">(</span><span class="sa">R</span><span class="s">&quot;</span><span class="dl">(</span><span class="s"></span>
+<span class="s">    mov %[result], %[val]</span>
+<span class="s">    inc %[result]</span>
+<span class="s">    BREAK</span>
+
+<span class="s">  </span><span class="dl">)</span><span class="s">&quot;</span>
+      <span class="o">:</span> <span class="cm">/* write */</span> <span class="p">[</span><span class="n">result</span><span class="p">]</span><span class="s">&quot;=r&quot;</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+      <span class="o">:</span> <span class="cm">/* read */</span> <span class="p">[</span><span class="n">val</span><span class="p">]</span><span class="s">&quot;r&quot;</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div>
+
+<h3>Part 2 - Assembly Instructions: Conditional Branches</h3>
+<p>Template:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">asm</span><span class="p">(</span><span class="sa">R</span><span class="s">&quot;</span><span class="dl">(</span><span class="s"></span>
+<span class="s">    CP %[left], %[right]</span>
+<span class="s">    BRGE 1f</span>
+<span class="s">    mov %[result], %[right]</span>
+<span class="s">    jmp  2f</span>
+<span class="s">1:</span>
+<span class="s">    mov %[result], %[left]</span>
+<span class="s">2:</span>
+<span class="dl">)</span><span class="s">&quot;</span>
+    <span class="o">:</span> <span class="p">[</span><span class="n">result</span><span class="p">]</span><span class="s">&quot;=r&quot;</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+    <span class="o">:</span> <span class="p">[</span><span class="n">left</span><span class="p">]</span><span class="s">&quot;r&quot;</span><span class="p">(</span><span class="n">left</span><span class="p">),</span> <span class="p">[</span><span class="n">right</span><span class="p">]</span><span class="s">&quot;r&quot;</span><span class="p">(</span><span class="n">right</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<h3>Part 3 - GCC Applications Binary Interface</h3>
+<p>Instead of writing our assembly code in our arduino file, we may want to create its own assembly file that will be read in our arduino file.</p>
+<p>When writting C function <code>fct(long a, long b);</code>, we should know that the variables <code>a</code> and <code>b</code> are stored in different registers depending on variables types.</p>
+<p>See: <a href="https://gcc.gnu.org/wiki/avr-gcc">Calling Conventions</a></p>
+<h6>Importing assembly files</h6>
+<div class="codehilite"><pre><span></span><code>extern &quot;C&quot; uint8_t max8(uint8_t left, uint8_t right);
+extern &quot;C&quot; uint8_t swap(uint8_t);
+</code></pre></div>
+
+<h6>Writing assembly file</h6>
+<div class="codehilite"><pre><span></span><code><span class="na">.global</span> <span class="no">swap</span>
+<span class="c1">; arg1:r24, result: r24</span>
+<span class="nl">swap:</span>
+    <span class="nf">ldi</span> <span class="no">r24</span><span class="p">,</span> <span class="mi">13</span>
+    <span class="nf">ldi</span> <span class="no">r22</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="nf">call</span> <span class="no">digitalWrite</span>
+    <span class="nf">swap</span> <span class="no">r24</span>
+    <span class="nf">ret</span>
+
+<span class="na">.global</span> <span class="no">max8</span>
+<span class="c1">; arg1: r24, arg2: r22, result: r24</span>
+<span class="nl">max8:</span>
+    <span class="nf">cp</span> <span class="no">r24</span><span class="p">,</span> <span class="no">r22</span>
+    <span class="nf">brsh</span> <span class="mi">1</span><span class="no">f</span>
+    <span class="nf">mov</span> <span class="no">r24</span><span class="p">,</span> <span class="no">r22</span>
+<span class="err">1:</span>
+    <span class="nf">ret</span>
+</code></pre></div>
+
+    </body>
+</html>

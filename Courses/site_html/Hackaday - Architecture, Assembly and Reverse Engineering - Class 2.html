@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-08-27" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>Hackaday - Architecture, Assembly and Reverse Engineering - Class 2</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>Hackaday - Architecture, Assembly and Reverse Engineering - Class 2</h1>
+<h3>Overview</h3>
+<p>This lecture has 3 parts:
+1. Timers - How to use timers to change clock speed
+2. Assembly Instructions - How to write Assembly code in Arduino</p>
+<h3>Part 1 -  Timers - How to use timers to change clock speed</h3>
+<h3>Part 2 - Assembly Instructions - How to write Assembly code in Arduino</h3>
+<h6>What are the assembly registers</h6>
+<p>There are 31 8-bits registers (r0...r31). Some of these registers have special names:</p>
+<ul>
+<li>X: (r26,r27)</li>
+<li>Y: (r28,r29)</li>
+<li>Z: (r30,r31)</li>
+<li>PC: Program Counter</li>
+<li>SREG: Status Register</li>
+</ul>
+<h6>Assembly Instructions in Arduino</h6>
+<p>Arduino Instructions has the following syntax: <code>asm("&lt;INSTRUCTION&gt;");</code></p>
+<p>We have seen a few instructions:
+- NOP: <code>ams("NOP");</code>
+- CLI/SEI: <code>ams("CLI");</code>, <code>ams("SEI");</code>
+- BREAK: <code>ams("BREAK");</code>
+- LDI/LDS: <code>ams("LDI r16, 55");</code>
+- STS/STD: <code>ams("STS 286, r16");</code>
+- INC: <code>ams("NOP");</code></p>
+<p>All instructions can be found at <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/AVR-Instruction-Set-Manual-DS40002198A.pdf">ATmega48A Instructions</a></p>
+<h6>Assembly Instructions - Input and Output</h6>
+<p>We can also read and write using assembly languages. The syntax is as follow:</p>
+<p><code>asm("&lt;INST&gt;" : "&lt;WRITE&gt;" : "&lt;READ&gt;");</code></p>
+<p>We can specify value and address as follows:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">asm</span><span class="p">(</span><span class="s">&quot;STS %[addr], %[val]&quot;</span>
+    <span class="o">:</span> <span class="cm">/* write */</span>
+    <span class="o">:</span> <span class="cm">/* read */</span> <span class="p">[</span><span class="n">val</span><span class="p">]</span><span class="s">&quot;r&quot;</span><span class="p">[</span><span class="n">value</span><span class="p">],</span> <span class="p">[</span><span class="n">addr</span><span class="p">]</span><span class="s">&quot;M&quot;</span><span class="p">(</span><span class="o">&amp;</span><span class="n">PORTD</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div>
+
+<p>"r": read registers
+"M": integer constants</p>
+<h3>Ressources</h3>
+<ul>
+<li><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/AVR-Instruction-Set-Manual-DS40002198A.pdf">ATmega48A Instructions</a></li>
+<li><a href="https://www.nongnu.org/avr-libc/user-manual/inline_asm.html">AVR User Manual</a></li>
+</ul>
+
+    </body>
+</html>

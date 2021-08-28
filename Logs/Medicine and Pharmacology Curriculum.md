@@ -3,4 +3,5 @@
 ## Courses
 
 - [Virology Ressources](Virology Ressources)
+- Pharmacology Resources
 

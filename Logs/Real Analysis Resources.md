@@ -17,9 +17,9 @@
 
 ### Real Analysis 2
 
-- Lecture Notes:
+- Lecture Notes: [Real Analysis 2 - Xioajing Ye](https://math.gsu.edu/xye/course/ra_handout/ra_notes.pdf)
 - Slides:
-- Video Lectures:  [Real Analysis 2 - Xiojing Ye](https://www.youtube.com/playlist?list=PLd7xu1NOxUDbBP9uSgrwGM4XaJzYaGFGr)
+- Video Lectures:  [Real Analysis 2 - Xiaojing Ye](https://www.youtube.com/playlist?list=PLd7xu1NOxUDbBP9uSgrwGM4XaJzYaGFGr)
 - Textbook:
 - Projects:
 - Exercices:
