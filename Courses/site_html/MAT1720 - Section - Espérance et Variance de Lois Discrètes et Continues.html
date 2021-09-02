@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-08-29" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>MAT1720 - Section - Espérance et Variance de Lois Discrètes et Continues</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>MAT1720 - Section - Espérance et Variance de Lois Discrètes et Continues</h1>
+<h2>Overview</h2>
+<ol>
+<li>Espérance et variance de variables aléatoires discrètes: l'espérance est la moyenne pondérée; la variance est E2(X(X-1))</li>
+<li>Espérance et variance de variables aléatoires continues: l'espérance est la moyenne pondérée calculée à l'aide d'une intégrale; la variance est <code>E(X) = E(X^2) - E(X)^2</code></li>
+</ol>
+<h2>Espérance et variance d'une variable aléatoire discrète</h2>
+<h3>Espérance d'une variable discrète</h3>
+<p>On peut interpréter l'espérance comme la moyenne pondérée des valeurs que peut prendre une variable aléatoire. Ainsi, il suffit de calculer</p>
+<div class="codehilite"><pre><span></span><code><span class="k">\sum</span><span class="nb">{</span>p(x) x<span class="nb">_</span>i<span class="nb">}</span>
+</code></pre></div>
+
+<h3>Variance d'une variable discrète</h3>
+<p>La variance mesure la dispersion autour de l'espérance: <code>V(X) = E[(X-u)^2]</code></p>
+<p>En distribuant, on se rend compte que <code>V(X) = E(X^2) - E(X)^2</code></p>
+<p>Cepedant, les moments d'ordre 2 sont parfois plus difiiciles à évaluer que
+<code>E(X(X-1))</code>, qui est egal a <code>E(X(X-1)) = E(X^2) - E(X)^2</code></p>
+<h3>Propriétés de l'espérance et de la variance</h3>
+<ul>
+<li>Linéarité de l'espérance: <code>E(aX+b) = aE(X) + b</code></li>
+<li><code>V(aX+b) = a^2 V(X)</code></li>
+</ul>
+<h3>Calcul Espérance et variance pour les variables aléatoires discrètes</h3>
+<ul>
+<li>Espérance et variance d'une loi binomiale</li>
+<li>Espérance et variance d'une Poisson</li>
+<li>Espérance et variance d'une géométrique</li>
+</ul>
+<h2>Espérance et variance d'une variable aléatoire continue</h2>
+<h3>Calcul de l'espérance et de la variance d'une variable aléatoire continue</h3>
+<p>Notons que les principes du calcul de l'espérance et de la variance pour une variable aléatoire continue restent les mêmes que celles discrètes. Cependant:
+- l'espérance est calculée avec une intégrale, non pas une somme
+- Les intégrales nous permettent d'évaluer E(X^2), on n'a pas besoin de calculer E(X(X-1)) pour calculer la variance, il suffit d'utiliser la formule  <code>V(X) = E(X^2)-E(X)^2</code></p>
+<p>Calcul d'espérance et de variance pour:
+- loi uniforme
+- loi exponentielle
+- loi normale</p>
+<h2>Ressources</h2>
+
+    </body>
+</html>

@@ -27,6 +27,8 @@
 
 #### Medical
 
+- [AK Lectures List](AK Lectures List)
+
 ##### Miscellaneous
 
 - Professor Dave Explains Playlist List

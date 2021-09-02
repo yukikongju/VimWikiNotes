@@ -1,14 +1,5 @@
 # IFT3700 - Course Name
 
-## Table des matières
-
-- [Introduction](#introduction)
-- [Résumé des séances](#résumé-séances)
-- [Résumé des TPs](#résumé-tps)
-- [Révision par chapitres](#revision)
-- [Liste de Concepts](#concepts)
-- [Ressources](#ressources)
-
 ## Introduction
 
 Liste des chapitres:

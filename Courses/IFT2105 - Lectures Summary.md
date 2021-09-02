@@ -2,8 +2,8 @@
 
 ### Semaine 1
 
-- IFT2105 - Week 1 Lecture 1
-- IFT2105 - Week 1 Lecture 2
+- [IFT2105 - Week 1 Lecture 1: Techniques de Preuves](IFT2105 - Week 1 Lecture 1)
+- [IFT2105 - Week 1 Lecture 2: Notations Asymptotiques et Programmes Répéter](IFT2105 - Week 1 Lecture 2)
 
 ### Semaine 2
 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-08-28" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>MAT1600 - Section - Matrices Inversibles</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>MAT1600 - Section - Matrices Inversibles</h1>
+<h2>Overview</h2>
+<p>La matrice inverse de A, notée A^{-1}, est la matrice qui nous permet de revenir retrouver le vecteur avant la transformation.</p>
+<h2>Définition d'une matrice inversible</h2>
+<p>Une matrice carrée est inversible ssi AB= BA = I</p>
+<h2>Résolution du SEL Ax=b avec la matrice inverse</h2>
+<p>Si on veut trouver le vecteur x en sachant b, le vecteur après transformation, et A, la matrice de transformation, on peut utiliser son inverse SI ELLE EXISTE. En multipliant par l'inverse des 2 côtés, on obtient:
+<code>A^-1A x = A^-1b</code></p>
+<h2>Analogie: nombre réel -&gt; Pourquoi les matrices ne sont pas toujours inversibles</h2>
+<p>On sait que les nombres réels forment un groupe abélien, ce qui veut dire que tous les nombres possèdent un inverse, sauf 0.</p>
+<p>Par exemple: trouver la valeur de 4x = 6 -&gt; x = 6/4, car inversible</p>
+<p>Cependant, trouver la valeur de x dans 0x = 0 -&gt; impossible, car il existe une infinité de valeurs.</p>
+<h2>Comment déterminer si une matrice est inversible: déterminants</h2>
+<ul>
+<li><a href="Les Déterminants.html">Les Déterminants</a></li>
+</ul>
+<h2>Comment trouver la matrice inverse avec la méthode de Gauss-Jordan (si elle existe)</h2>
+<p>[A|I] ~ [I|A^{-1}]</p>
+<h2>Matrices élémentaires</h2>
+<p>Si A est une matrice inversible, alors on peut la représenter comme le produit de matrices élémentaires, qui ne sont que des matrices identités par lesquelles on a appliquer une opérations lignes.</p>
+<p>Ainsi, si A peut être représenter par le produit de matrice élémentaires, elle est nécéssairement inversible. Donc, les matrices obtenus avec la méthode de Gauss sont inversibles</p>
+<h2>Propriétés des matrices inversibles</h2>
+<ol>
+<li>(A^-1)^-1 = A</li>
+<li>(AB)^-1 = B^-1 A^-1</li>
+<li>(A^T)^-1 = (A^-1)^T</li>
+</ol>
+<h2>Importance des matrices inversibles</h2>
+<p>La notion de matrice inversible revient lorsqu'on abordera la notion de diagonalisation. Essentiellement, on essait de trouver l'ensemble de valeurs pour lesquelles Ax=λx, c'est-à-dire l'ensemble de valeurs/vecteurs qui font ensorte qu'on perd une dimension (matrice non-inversible)</p>
+
+    </body>
+</html>

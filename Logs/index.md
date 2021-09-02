@@ -16,3 +16,13 @@
 ## Projects
 
 - Project Ideas
+
+## Books and Films
+
+- Books List
+- Filmography List
+
+## Installations
+
+- [Dev Installations Resources](Dev Installations Resources)
+

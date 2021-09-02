@@ -1,14 +1,5 @@
 # IFT1227 - Architecture des ordinateurs 1
 
-## Table des matières
-
-- [Introduction](#introduction)
-- [Résumé des séances](#résumé-séances)
-- [Résumé des TPs](#résumé-tps)
-- [Révision par chapitres](#revision)
-- [Liste de Concepts](#concepts)
-- [Ressources](#ressources)
-
 ## Introduction
 
 Liste des chapitres:
@@ -30,3 +21,5 @@ Liste des chapitres:
 - IFT1227 - Concepts List
 
 ## Ressources
+
+- Book: [Digital Design and Computer Architecture by David Money Harris]

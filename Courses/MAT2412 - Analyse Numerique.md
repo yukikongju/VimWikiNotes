@@ -1,13 +1,5 @@
 # MAT2412 - Analyse Numérique
 
-## Table des matières
-
-- [Introduction](#introduction)
-- [Résumé des séances](#résumé)
-- [Révision par chapitres](#revision)
-- [Liste de Concepts](#concepts)
-- [Ressources](#ressources)
-
 ## Introduction
 
 Liste des chapitres:

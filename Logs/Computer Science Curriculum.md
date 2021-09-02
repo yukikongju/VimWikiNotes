@@ -15,19 +15,21 @@
 ### Specialization
 
 - [Computer Graphics Resources](Computer Graphics Resources)
+- [Computer Security Resources](Computer Security Resources)
+- [Human Computer Interaction Ressources](Human Computer Interaction Ressources)
 - [AI and ML Resources](AI and ML Resources)
 - [Data Science Resources](Data Science Resources)
-- [Computer Security Resources](Computer Security Resources)
-- [Computer Vision](Computer Vision)
-- [Human Computer Interaction Ressources](Human Computer Interaction Ressources)
+- [Natural Language Processing Resources](Natural Language Processing Resources)
+- [Autonomous Driving Ressources](Autonomous Driving Ressources)
+- [Computer Vision Resources](Computer Vision Resources)
+- [Game Development Resources](Game Development Resources)
+- [Information System Resources](Information System Resources)
 - [Bioinformatic Resources](Bioinformatic Resources)
 - Quantitative Analysis Resources
 - [Quantum Computation Resources](Quantum Computation Resources)
-- [Autonomous Driving Ressources](Autonomous Driving Ressources)
 - [Software Engineering Resources](Software Engineering Resources)
 - [Embedded Systems Resources](Embedded Systems Resources)
 - [Cryptocurrency Resources](Cryptocurrency Resources)
-- [Game Development Resources](Game Development Resources)
 - [Web Development Resources](Web Development Resources)
 
 ### Ressources

@@ -2,7 +2,7 @@
 
 ### Semaine 1
 
-- IFT3700 - Week 1 Lecture 1
+- [IFT3700 - Week 1 Lecture 1](IFT3700 - Week 1 Lecture 1)
 - IFT3700 - Week 1 Lecture 2
 
 ### Semaine 2

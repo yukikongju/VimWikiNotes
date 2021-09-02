@@ -14,9 +14,11 @@
 - Differential Geometry Resources
 
 ## Specialization
+
 - [Optimization Resources](Optimization Resources)
 - [Financial Mathematics Resources](Financial Mathematics Resources)
 - [Game Theory Resources](Game Theory Resources)
+- [Actuarial Science Resources](Actuarial Science Resources)
 
 ## Grad Classes
 

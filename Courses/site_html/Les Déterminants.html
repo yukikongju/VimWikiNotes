@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-08-28" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>Les Déterminants</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>Les Déterminants</h1>
+<h2>Overview</h2>
+<p>Trouver le déterminant d'une matrice à 2 utilités:
+1. Déterminer si la matrice est inversible
+2. Déterminer si la transformation produit un agrandissement ou non</p>
+<p>Le calcul des déterminants permet aussi de résoudre des SEL à l'aide de la méthode de Cramer, qui est une méthode utilisée pour résoudre des ODEs (Wronskian)</p>
+<h2>Comment Calculer le déterminant avec les propriétés</h2>
+<p>On peut utiliser les propriétés lignes et colonnes pour obtenir une matrice triangulaire, et le déterminant n'est que le produit de la diagonale</p>
+<p>Opérations:
+- Addition
+- Swap: x-1
+- Multiplication</p>
+<h2>Comment déterminer si la matrice est inversible</h2>
+<p>Si le déterminant z <code>det(A)=0</code> l'inverse n'existe pas.</p>
+<p>Remarque: l'inverse d'une matrice est unique</p>
+<h2>Interprétation géométrique du déterminant</h2>
+<p>Il faut se souvenir que le déterminant calcule l'aire d'un parallélogramme. Ce même parallélogramme mesure l'aire de notre système de coordonnées. Ainsi, si :</p>
+<ul>
+<li>0 &lt; |det(A)| &lt; 1 : le vecteur rétrécit après transformation</li>
+<li>|det(A)|=1: la transformation préserve la longueur du vecteur</li>
+<li>
+<p>|det(A)|&gt;1: le vecteur s'agrandit après transformation</p>
+</li>
+<li>
+<p>det(A) positif: même sens</p>
+</li>
+<li>det(A) négatif: miroir</li>
+</ul>
+<h2>Propriétés du déterminants</h2>
+<p>Propriétés du produit de matrices: <code>det(AB) = det(A) det(B)</code></p>
+<p>Propriétés de la transposée de matrice: <code>det(A) = det(A^T)</code></p>
+<h2>Règle de Cramer</h2>
+<ul>
+<li><a href="Règle de Cramer.html">Règle de Cramer</a></li>
+</ul>
+
+    </body>
+</html>

@@ -1,4 +1,4 @@
-# ACADEMIA
+# Personal Notes Wiki
 
 ### Courses
 
@@ -12,3 +12,9 @@
 ### Project
 
 - [Projects Completed](Projects Completed)
+
+### Dev
+
+- Vim Plugins and Installations
+
+### Books

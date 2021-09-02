@@ -6,4 +6,4 @@
 - Web Security Resources
 - Hardware Hacking Resources
 - [Cryptography Resources](Cryptography Resources)
-- 
+-  Digital Forensics Resources
