@@ -1,4 +1,4 @@
-# IFT2125 - Course Name
+# IFT2125 - Introduction a l'algorithmique
 
 ## Introduction
 

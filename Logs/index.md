@@ -9,6 +9,7 @@
 - [Chemistry Curriculum](Chemistry Curriculum)
 - [Economics Curriculum](Economics Curriculum)
 - [Medicine and Pharmacology Curriculum](Medicine and Pharmacology Curriculum)
+
 ## Webinars
 
 - [Webinars List](Webinars List)

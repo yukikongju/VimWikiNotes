@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <meta name="date" content="2021-09-01" scheme="YYYY-MM-DD">
+        <meta name="date" content="2021-09-05" scheme="YYYY-MM-DD">
         <meta name="viewport" content="width=device-width" />
         <title>IFT1227 - Week 1 Lecture 1</title>
         <link rel="stylesheet" href="style.css" type="text/css"
@@ -21,6 +21,33 @@
 <li>Portes Logiques</li>
 <li>Niveaux de Tension et bruit</li>
 </ol>
+<h2>Part 1 - Introduction</h2>
+<h3>Composantes d'un ordi</h3>
+<p>Un ordi est compose de hardware (materiel: ecran, keyboard, CPU, ...) et de
+software (programme qui ne se voit pas)</p>
+<h3>Couches d'un ordi</h3>
+<p>Notre code subi plusieurs transformations avant d'etre interpreter par notre
+ordinateur:
+1. High level language -&gt; compileur transforme high level to assembly code
+2. Low level language -&gt; assembleur transforme assembly code to machine code
+3. Linker -&gt; ajoute metadata + registers informations
+4. Microarchitecture -&gt; ???
+5. Circuits logiques</p>
+<p>Pour ce cours, on apprend de bottom-up</p>
+<h2>Part 2 - Portes Logiques</h2>
+<p>On peut representer les portes logiques de 3 facons:
+- table de verite
+- fonction
+- Symbole</p>
+<p>Remarque:
+- les portes logiques sont des circuits combinatoires -&gt; pas de cycle permis + chaque porte = 1 output
+- les portes logiques sont faits de transisteurs (x3)</p>
+<h2>Part 3 - Niveaux de Tension et Bruit dans les transisteurs</h2>
+<p>Les transisteurs fonctionnent de facon analogue, c-a-d que le signal transmis
+est continue. Par contre, il est pratique de le considerer discret. Ainsi,
+on considere que le transiteur emet un 1 ou 0 dependemment s'il se trouve
+a l'interieur d'un intervalle donne. S'il se trouve dans la zone interdite,
+on n'est pas capable de determiner la nature du signal.</p>
 
     </body>
 </html>

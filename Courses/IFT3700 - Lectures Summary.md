@@ -2,8 +2,8 @@
 
 ### Semaine 1
 
-- [IFT3700 - Week 1 Lecture 1](IFT3700 - Week 1 Lecture 1)
-- IFT3700 - Week 1 Lecture 2
+- [IFT3700 - Week 1 Lecture 1: No lecture](IFT3700 - Week 1 Lecture 1)
+- [IFT3700 - Week 1 Lecture 2: Quiz Preamtoire](IFT3700 - Week 1 Lecture 2)
 
 ### Semaine 2
 

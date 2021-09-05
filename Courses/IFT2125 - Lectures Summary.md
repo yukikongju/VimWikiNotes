@@ -2,8 +2,8 @@
 
 ### Semaine 1
 
-- IFT2125 - Week 1 Lecture 1
-- IFT2125 - Week 1 Lecture 2
+- [IFT2125 - Week 1 Lecture 1: Plan de cours](IFT2125 - Week 1 Lecture 1)
+- [IFT2125 - Week 1 Lecture 2: Notation Asymptotique, pgcd, apartenance permutations](IFT2125 - Week 1 Lecture 2)
 
 ### Semaine 2
 

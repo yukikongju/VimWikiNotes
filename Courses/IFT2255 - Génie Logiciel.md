@@ -1,14 +1,5 @@
 # IFT2255 - Génie Logiciel
 
-## Table des matières
-
-- [Introduction](#introduction)
-- [Résumé des séances](#résumé-séances)
-- [Résumé des Tps](#résumé-tps)
-- [Révision par chapitres](#revision)
-- [Liste de Concepts](#concepts)
-- [Ressources](#ressources)
-
 ## Introduction
 
 Liste des chapitres:

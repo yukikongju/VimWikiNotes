@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-05" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT2125 - Week 1 Lecture 2</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT2125 - Week 1 Lecture 2</h1>
+<h2>Overview</h2>
+<p>This lecture introduced us to the notion of:
+- asymptotic complexity (big O, little O, Big Omega, little omega, Big Theta)
+- 3 algorithms:
+    * pgcd(euclid + linear combination: sa+tb)
+    * Fourier Transform: calculate Mx and M^-1x where M is an Vandermonde matrix (inversible matrix)
+    * Appartenance Permutations</p>
+<h2>Part 1 - Asymptotic Complexity</h2>
+<p>Il faut retenir les definitions de:
+- Big O: Borne superieure (&lt;=) : il existe un c pour lequel tous n&gt;n_0 -&gt; f(n) &lt;= c * g(n)
+- Little O: Borne superieure (&lt;) : pour tout c et n &gt; n_0 -&gt; f(n) &lt;= c * g(n)
+- Big Omega: Borne inferieure (&gt;=) : g \elem Big-O(f)
+- Little omega: Borne inferieure (&gt;) : g \elem little-o(f)
+- Big Theta: Egalite des bornes (=) : f \elem Big-O(f) &amp;&amp; g \elem Big-O(f)</p>
+<h2>Part 2 - 3 Algorithms: pgcd, fourier transform, appartenance permutations</h2>
+<p>La deuxieme partie du cours introduisait a 3 algorithmes utilises frequemment en CS.
+Il est important de retenir qu'on veut etudier:
+- complexite de l'algorithme
+- possibilite de parallelisation
+- preuve de convergence (plus tard)</p>
+<h3>Algorithme: pgcd</h3>
+<p>On a vu deux saveur du pgcd:
+- euclid: reste modulo diviseur
+- combinaison lineaire: pgcd(a,b)=sa+bt</p>
+<p>Malgre que l'algorithme de euclid est lineaire O(n), il nous permet pas de
+paralleliser nos calculs</p>
+<h3>Algorithme: Fourier Transform</h3>
+<p>On n'est pas entre dans les details, il faut jute se souvenir que cette
+methode nous permet de calculer rapidement la transformations lineaire Mx et M^-1x
+d'une matrice inversible</p>
+<h3>Algorithme: Apartenance Permutations</h3>
+<p>Cette section nous introduit a:
+1. Ecrire les permutations en cycle
+2. Produit de permutations</p>
+<p>Prochain cours: comment effectuer des produits de permutations intelligemment</p>
+
+    </body>
+</html>

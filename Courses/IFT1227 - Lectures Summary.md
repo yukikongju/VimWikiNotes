@@ -2,8 +2,8 @@
 
 ### Semaine 1
 
-- [IFT1227 - Week 1 Lecture 1](IFT1227 - Week 1 Lecture 1)
-- IFT1227 - Week 1 Lecture 2
+- [IFT1227 - Week 1 Lecture 1: Couches d'un ordi, portes logiques, bruit](IFT1227 - Week 1 Lecture 1)
+- [IFT1227 - Week 1 Lecture 2: Circuits combinatoires (representation + simplification)](IFT1227 - Week 1 Lecture 2)
 
 ### Semaine 2
 

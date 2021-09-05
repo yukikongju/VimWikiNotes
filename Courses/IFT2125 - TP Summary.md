@@ -1,6 +1,6 @@
 ## IFT2125 - TP Summary
 
-- IFT2125 - TP 1
+- [IFT2125 - TP 1: Introduction to Python](IFT2125 - TP 1)
 - IFT2125 - TP 2
 - IFT2125 - TP 3
 - IFT2125 - TP 4

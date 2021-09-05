@@ -19,12 +19,12 @@
 
 ## Session 3
 
+- [IFT 1227 - Architecture des ordinateurs 1](IFT1227 - Architecture des ordinateurs)
 - [IFT2105 - Intro à l'informatique théorique](IFT2105 - Intro à linformatique théorique)
 - [IFT2125 - Introduction à l'algorithmique](IFT2125 - Introduction à l'algorithmique)
 - [IFT2255 - Génie Logiciel](IFT2255 - Génie Logiciel)
 - [IFT3700 - Data Science](IFT3700 - Data Science)
 - MAT2412 - Analyse Numérique
-- [IFT 1227 - Architecture des ordinateurs 1](IFT1227 - Architecture des ordinateurs)
 
 ## Session 4
 
