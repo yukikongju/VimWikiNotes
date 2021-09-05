@@ -28,8 +28,9 @@
 
 ## Session 4
 
-- IFT3155 - Informatique Quantique
+- [IFT3155 - Informatique Quantique](IFT3155 - Informatique Quantique)
 - IFT2905 - Interfaces personne-machine
+- [IFT3275 - Sécurité Informatique](IFT3275 - Sécurité Informatique)
 - IFT3335 - Intelligence Artificielle
 - MAT2115 - Équations Différentielles
 

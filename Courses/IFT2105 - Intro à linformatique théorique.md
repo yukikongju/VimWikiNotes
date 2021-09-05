@@ -39,3 +39,4 @@ Liste des chapitres:
 ## Ressources
 
 - Book: [Introduction to the Theory of computation - Michael Sipser]
+- Slides: [IFT6370 - Informatique Théorique Avancée par Alain Tapp](https://sites.google.com/view/alain-tapp-mila/enseignement/informatique-th%C3%A9orique)
