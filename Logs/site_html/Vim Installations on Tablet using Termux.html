@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-04" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>Vim Installations on Tablet using Termux</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>Vim Installations on Tablet using Termux</h1>
+<h5>Step 0: Install Termux and f-Droid</h5>
+<h5>Step 1: Install packages</h5>
+<div class="codehilite"><pre><span></span><code>pkg install vim-python tmux fzf git nodejs-lts yarn ctags texlive-bin ranger
+</code></pre></div>
+
+<h5>Step 2: Install Plug Vim</h5>
+<div class="codehilite"><pre><span></span><code><span class="n">curl</span> <span class="o">-</span><span class="n">fLo</span> <span class="o">~/.</span><span class="n">vim</span><span class="o">/</span><span class="n">autoload</span><span class="o">/</span><span class="n">plug</span><span class="o">.</span><span class="n">vim</span> <span class="o">--</span><span class="n">create</span><span class="o">-</span><span class="n">dirs</span> \
+    <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">junegunn</span><span class="o">/</span><span class="n">vim</span><span class="o">-</span><span class="n">plug</span><span class="o">/</span><span class="k">master</span><span class="o">/</span><span class="n">plug</span><span class="o">.</span><span class="n">vim</span>
+</code></pre></div>
+
+<h5>Step 3: Clone Dot Files and generate symbolic links</h5>
+<div class="codehilite"><pre><span></span><code>git clone https://github.com/yukikongju/dotfiles
+./dotfiles/scripts/vim.sh
+./dotfiles/scripts/snips.sh
+</code></pre></div>
+
+<h5>Step 4: Activate coc.nvim</h5>
+<div class="codehilite"><pre><span></span><code>cd .vim/plugged/coc.nvim
+yarn install
+yarn build
+</code></pre></div>
+
+<h5>Step 5: Remap Keyboard Key</h5>
+<p>For Fintie Keyboard:</p>
+<h5>Step 6: Make utils work</h5>
+<ul>
+<li>VimWiki2HTML: <code>pip install vimwiki-markdown</code></li>
+<li>pdflatex</li>
+</ul>
+<h5>Step 7: Git Authentification</h5>
+<div class="codehilite"><pre><span></span><code><span class="n">git</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">--</span><span class="k">global</span><span class="w"> </span><span class="k">user</span><span class="p">.</span><span class="n">email</span><span class="w"> </span><span class="ss">&quot;&lt;your_email@mail.com&gt;&quot;</span><span class="w"></span>
+<span class="n">git</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="o">--</span><span class="k">global</span><span class="w"> </span><span class="k">user</span><span class="p">.</span><span class="n">name</span><span class="w"> </span><span class="ss">&quot;&lt;Your Name&gt;&quot;</span><span class="w"></span>
+<span class="n">git</span><span class="w"> </span><span class="n">config</span><span class="w"> </span><span class="c1">--global credential.helper store</span>
+</code></pre></div>
+
+<h5>Step 8: Clone Repos</h5>
+<div class="codehilite"><pre><span></span><code>git clone https://github.com/yukikongju/VimWikiNotes
+</code></pre></div>
+
+    </body>
+</html>

@@ -21,3 +21,5 @@ Liste des chapitres:
 - IFT3700 - Concepts List
 
 ## Ressources
+
+- [IFT3700 - Science des données par Alain Tapp](https://sites.google.com/view/alain-tapp-mila/enseignement/science-des-donn%C3%A9es)
