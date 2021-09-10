@@ -4,7 +4,7 @@
 
 ``Concepts: Basic DS (bag, queue, stack),  heap, binary search tree, self-balancing BST (AVL Tree, red-black tree, B-Trees), hashmap ``
 
-- Lecture Notes:
+- Lecture Notes: [Stanford CS166 - Data Structures](http://web.stanford.edu/class/cs166/)
 - Slides:
 - Video Series: [Data Structure by William Fiset](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu)
 - Video Lectures part 1: [Princeton - Algorithms I](https://www.coursera.org/learn/algorithms-part1)
@@ -62,3 +62,34 @@
 - Projects:
 - Exercices:
 - Exams:
+
+### Convex Optimization I
+
+- Lecture Notes: [ Stanford EE364a - Convex Optimization I ](https://web.stanford.edu/class/ee364a/index.html)
+- Slides:
+- Video Lectures:
+- Textbook:
+- Projects:
+- Exercices:
+- Exams:
+
+### Convex Optimization II
+
+- Lecture Notes: [ Stanford EE364b - Convex Optimization I ](https://web.stanford.edu/class/ee364b/index.html)
+- Slides:
+- Video Lectures:
+- Textbook:
+- Projects:
+- Exercices:
+- Exams:
+
+### Linear Dynamical Systems
+
+- Lecture Notes: [Stanford EE363 - Linear Dynamical Systems](https://web.stanford.edu/class/ee363/index.html)
+- Slides:
+- Video Lectures:
+- Textbook:
+- Projects:
+- Exercices:
+- Exams:
+

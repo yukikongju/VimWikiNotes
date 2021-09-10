@@ -25,3 +25,4 @@ Liste des chapitres:
 ## Ressources
 
 - [IFT3275 - Sécurité Informatique par Alain Tapp](https://sites.google.com/view/alain-tapp-mila/enseignement/s%C3%A9curit%C3%A9-informatique)
+- [Stanford CS213 - Web Security Fall 2019](https://web.stanford.edu/class/cs253/)

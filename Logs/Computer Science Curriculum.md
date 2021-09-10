@@ -6,7 +6,7 @@
 - [Data Structure and Algorithms Resources](Data Structure and Algorithms Resources)
 - [Computer Systems Resources](Computer Systems Resources)
 - [Operating Systems Resources](Operating Systems Resources)
-- Languages and Compilers Resources
+- [Languages and Compilers Resources](Languages and Compilers Resources)
 - [Computer Architecture Resources](Computer Architecture Resources)
 - [Database Systems Resources](Database Systems Resources)
 - Network and Communications Resources

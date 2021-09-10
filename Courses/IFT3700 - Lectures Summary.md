@@ -7,8 +7,8 @@
 
 ### Semaine 2
 
-- IFT3700 - Week 2 Lecture 1
-- IFT3700 - Week 2 Lecture 2
+- IFT3700 - Week 2 Lecture 1: No lecture
+- [IFT3700 - Week 2 Lecture 2 Introduction](IFT3700 - Week 2 Lecture 2)
 
 ### Semaine 3
 

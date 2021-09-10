@@ -18,3 +18,14 @@
 - Projects:
 - Exercices:
 - Exams:
+
+### Data Intensive Systems
+
+- Lecture Notes: [Stanford CS 245 - Principles of Data-Intensive Systems](https://web.stanford.edu/class/cs245/)
+- Slides:
+- Video Lectures:
+- Textbook:
+- Projects:
+- Exercices:
+- Exams:
+

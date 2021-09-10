@@ -4,6 +4,9 @@
 
 ### September
 
+- [Managing my TODO List](2021-09-08)
+- [On Communicating better](2021-09-07)
+- [An Outlook on Connection](2021-09-06)
 - [Vim on Tablet with Termux](2021-09-04)
 
 ### August

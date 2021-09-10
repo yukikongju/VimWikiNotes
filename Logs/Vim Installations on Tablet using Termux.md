@@ -39,8 +39,8 @@ For Fintie Keyboard:
 ##### Step 6: Make utils work
 
 - VimWiki2HTML: `` pip install vimwiki-markdown ``
-- pdflatex
-
+- Ack-Grep (not working): `` pkg install ack-grep silversearcher-ag ripgrep`` 
+- pdflatex:
 
 ##### Step 7: Git Authentification
 

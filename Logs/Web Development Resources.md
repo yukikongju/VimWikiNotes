@@ -1,5 +1,15 @@
 # Web Development Resources
 
+### Web Programming
+
+- Lecture Notes: [Stanford CS 193x - Web programming Fundamentals](https://web.stanford.edu/class/archive/cs/cs193x/cs193x.1176/lectures/)
+- Slides:
+- Video Lectures:
+- Textbook:
+- Projects:
+- Exercices:
+- Exams:
+
 ### Advanced Web Design
 
 - Lecture Notes:

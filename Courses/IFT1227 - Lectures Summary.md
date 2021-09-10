@@ -7,7 +7,7 @@
 
 ### Semaine 2
 
-- IFT1227 - Week 2 Lecture 1
+- [IFT1227 - Week 2 Lecture 1: Simplification des ciruits combinatoires: methode bulles, par observation et table de Karnaugh](IFT1227 - Week 2 Lecture 1)
 - IFT1227 - Week 2 Lecture 2
 
 ### Semaine 3

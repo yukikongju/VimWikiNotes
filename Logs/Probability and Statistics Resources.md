@@ -3,6 +3,7 @@
 ### Statistics
 
 - Lecture Notes:
+- Lecture Notes: [Stanford CS 109 - Probability for Computer Scientists](https://web.stanford.edu/class/cs109/)
 - Slides:
 - Video Lectures:
 - Textbook:

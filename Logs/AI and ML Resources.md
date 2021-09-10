@@ -80,6 +80,7 @@
 ### Reinforcement Learning
 
 - Lecture Notes: [Reinforcement Learning - David Silver](https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver)
+- Website: [Stanford CS 234 - Reinforcement Learning](https://web.stanford.edu/class/cs234/#course_schedule)
 - Slides:
 - Video Lectures: [Reinforcement Learning - David Silver](https://www.youtube.com/playlist?list=PLqYmG7hTraZBiG_XpjnPrSNw-1XQaM_gB)
 - Textbook:

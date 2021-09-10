@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-09" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT2125 - Week 2 Lecture 1</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT2125 - Week 2 Lecture 1</h1>
+<h2>Overview</h2>
+<p>Ce cours-ci continuait sur le sujet de probleme d'appartenance permutations.
+On a vu l'algorithme intelligent utilisant la notion du tamisage</p>
+<h2>Part 1 - Rappel du Probleme d'apartenance</h2>
+<ul>
+<li>Comment representer une permutation cycliques</li>
+<li>Comment representer l'inverse d&lt;une permutation: regarder les cycles dans les sens inverse</li>
+<li>Permutation identite = permutation * inverse</li>
+</ul>
+<p>Probleme d'appartenance: given a permutation, we want to know wether we will 
+get that permutations after product of some other permutations </p>
+<h2>Part 2 - Tamisage</h2>
+<p>Le tamisage est un "helper" method qui va nous aider dans l'algorithme intelligent.</p>
+<p>Il marche de la facon suivante:
+1. Initialiser un matrice rectangulaire T[i,j] a l'identite
+2. tant que la matrice n'a pas fixe une permutation pour chaque case,
+   on regarde les permutations. 
+   =&gt; si le tableau a la position i et son mapping j a une identite, ajouter 
+    cette permutation au tableau
+   =&gt; s'il y a collision, on fait rien: (on entre dans le else et on recalcule
+    une autre permutation donnee par pi &lt;- pi * (T[i,j])^-1)</p>
+<h3>Algorithme pour le tamisage</h3>
+<div class="codehilite"><pre><span></span><code><span class="n">Tamiser</span><span class="p">(</span><span class="n">pi</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">pi</span> <span class="o">!=</span> <span class="n">epsilon</span><span class="p">:</span>
+    <span class="n">i</span> <span class="o">&lt;-</span> <span class="nb">min</span><span class="p">{</span><span class="n">i</span><span class="p">:</span> <span class="n">i</span><span class="o">^</span><span class="p">{</span><span class="n">pi</span><span class="p">}</span> <span class="o">!=</span> <span class="n">i</span><span class="p">}</span> <span class="c1"># premier point non-fixé</span>
+    <span class="n">j</span> <span class="o">&lt;-</span> <span class="n">i</span><span class="o">^</span><span class="p">{</span><span class="n">pi</span><span class="p">}</span>      <span class="c1"># mapping du point i</span>
+    <span class="k">if</span> <span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="n">epsilon</span><span class="p">:</span>    <span class="c1"># si la case à i et j est l&#39;identité, alors on ajoute</span>
+        <span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;-</span> <span class="n">pi</span>
+    <span class="k">else</span><span class="p">:</span>            <span class="c1"># sinon, multiplier par l&#39;inverse de ce qu&#39;il y a dans la case</span>
+        <span class="n">pi</span> <span class="o">&lt;-</span> <span class="n">pi</span> <span class="o">*</span> <span class="p">(</span><span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">])</span><span class="o">^-</span><span class="mi">1</span>
+</code></pre></div>
+
+    </body>
+</html>

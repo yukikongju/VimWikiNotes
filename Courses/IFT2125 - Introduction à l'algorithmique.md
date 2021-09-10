@@ -20,6 +20,15 @@ Liste des chapitres:
 
 - IFT2125 - Concepts List
 
+## Questions
+
+- IFT2125 - List of Questions
+
+## Concepts to Review
+
+- [IFT2125 - Concepts to Review](IFT2125 - Concepts to Review)
+
+
 ## Final Thoughts
 
 ## Ressources

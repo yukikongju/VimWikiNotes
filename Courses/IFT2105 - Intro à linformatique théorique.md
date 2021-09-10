@@ -36,6 +36,10 @@ Liste des chapitres:
 
 - [IFT2105 - Concepts List](IFT2105 - Concepts List)
 
+## Questions
+
+- IFT2105 - List of Questions
+
 ## Ressources
 
 - Book: [Introduction to the Theory of computation - Michael Sipser]

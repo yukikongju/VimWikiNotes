@@ -20,32 +20,32 @@
 ## Session 3
 
 - [IFT 1227 - Architecture des ordinateurs 1](IFT1227 - Architecture des ordinateurs)
+- [IFT1575 - Modèle de Recherche Opérationnelle](IFT1575 - Modèle de Recherche Opérationnelle)
 - [IFT2105 - Intro à l'informatique théorique](IFT2105 - Intro à linformatique théorique)
 - [IFT2125 - Introduction à l'algorithmique](IFT2125 - Introduction à l'algorithmique)
 - [IFT2255 - Génie Logiciel](IFT2255 - Génie Logiciel)
 - [IFT3700 - Data Science](IFT3700 - Data Science)
-- MAT2412 - Analyse Numérique
 
 ## Session 4
 
 - [IFT3155 - Informatique Quantique](IFT3155 - Informatique Quantique)
-- IFT2905 - Interfaces personne-machine
 - [IFT3275 - Sécurité Informatique](IFT3275 - Sécurité Informatique)
 - IFT3335 - Intelligence Artificielle
 - MAT2115 - Équations Différentielles
+- MAT2412 - Analyse Numérique
 
 ## Session 5
 
-- IFT1575 - Modèle de Recherche Opérationnelle
+- IFT2905 - Interfaces personne-machine
 - IFT3295 - Bioinformatique
 - IFT3355 - Infographie
 - IFT3395 - Fondements de l'apprentissage machine
-- MAT2050 - Analyse 2
+- MAT1410 - Calcul 2
 
 ## Session 6
 
-- MAT1410 - Calcul 2
-- MAT2130 - Variable Complexe
+- MAT2050 - Analyse 2
+- MAT2130 - Variables Complexes
 - IFT2935 - Bases de Données
 - IFT3065 - Languages de programmation et compilation
 - IFT3275 - Sécurité Informatique

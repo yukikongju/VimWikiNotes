@@ -7,8 +7,8 @@
 
 ### Semaine 2
 
-- IFT2105 - Week 2 Lecture 1
-- IFT2105 - Week 2 Lecture 2
+- [IFT2105 - Week 2 Lecture 1: Programmes Répéter; Tableaux Repeter (skipped)](IFT2105 - Week 2 Lecture 1)
+- [IFT2105 - Week 2 Lecture 2](IFT2105 - Week 2 Lecture 2)
 
 ### Semaine 3
 

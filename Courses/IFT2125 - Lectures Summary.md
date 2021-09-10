@@ -7,8 +7,8 @@
 
 ### Semaine 2
 
-- IFT2125 - Week 2 Lecture 1
-- IFT2125 - Week 2 Lecture 2
+- [IFT2125 - Week 2 Lecture 1: Tamisage](IFT2125 - Week 2 Lecture 1)
+- [IFT2125 - Week 2 Lecture 2: Condition d'arret du Tamisage, Propriete du tamisage: toute permutations s'expriment comme le produit des lignes precedantes](IFT2125 - Week 2 Lecture 2)
 
 ### Semaine 3
 

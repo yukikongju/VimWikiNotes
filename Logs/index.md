@@ -14,9 +14,17 @@
 
 - [Webinars List](Webinars List)
 
+## Dev Technologies
+
+- [Dev Technologies to Explore](Dev Technologies to Explore)
+
 ## Projects
 
-- Project Ideas
+- [Project Ideas](Project Ideas)
+
+## Thesis
+
+- [Thesis Ideas in Computer Science](Thesis Ideas in Computer Science)
 
 ## Books and Films
 

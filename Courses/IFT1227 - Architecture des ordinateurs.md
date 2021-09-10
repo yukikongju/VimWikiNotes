@@ -20,6 +20,14 @@ Liste des chapitres:
 
 - IFT1227 - Concepts List
 
+## Questions
+
+- [IFT1227 - List of Questions](IFT1227 - List of Questions)
+
+## Concepts to Review
+
+- [IFT1227 - Concept to Review](IFT1227 - Concept to Review)
+
 ## Ressources
 
 - Book: [Digital Design and Computer Architecture by David Money Harris]

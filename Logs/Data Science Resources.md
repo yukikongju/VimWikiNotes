@@ -9,3 +9,24 @@
 - Projects:
 - Exercices:
 - Exams:
+
+### Data Mining
+
+- Lecture Notes: [Stanford CS246 - Mining Massive Data Sets](http://web.stanford.edu/class/cs246/index.html#content)
+- Slides:
+- Video Lectures:
+- Textbook:
+- Projects:
+- Exercices:
+- Exams:
+
+### Information Retrieval and Web Search
+
+- Lecture Notes: [Stanford CS 276 - Information Retrieval and Web Search](https://web.stanford.edu/class/cs276/)
+- Slides:
+- Video Lectures:
+- Textbook:
+- Projects:
+- Exercices:
+- Exams:
+

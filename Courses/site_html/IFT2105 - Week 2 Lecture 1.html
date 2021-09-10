@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-09" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT2105 - Week 2 Lecture 1</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT2105 - Week 2 Lecture 1</h1>
+<h2>Overview</h2>
+<p>Le cours abordait les programmes REPETER:
+1. Qu'est-ce qu'un programme repeter
+2. Structure recursive d'un programme repeter
+3. Exemples de programme repeter</p>
+<h2>Part 1 - Qu'est-ce qu'un programme repeter</h2>
+<p>Un programme repeter est un programme qui:
+- Contient un nombre fini de registres, initialise a zero
+- les registres contiennent uniquement des valeurs entieres
+- 3 instructions:
+    - store: r_i &lt;- r_j
+    - increment: inc(r_i)
+    - Repeat: repeat n times { ... }</p>
+<h2>Part 2 - Structure recursive d'un programme repeter</h2>
+<p>Un programme répéter admet les caractéristiques suivantes:
+- S_0 : store et increment sont des programmes repeter
+- R_1: Concatenation de programmes repeter est un programme repeter
+- R_2: Si P est un programme repeter, repeat n times { P } est un programme repeter</p>
+<h2>Part 3 - Exemples de programme repeter</h2>
+<p>On a vu quelques exemples de programmes repeter:
+- addition, multiplication, exponentiation
+- decrementation, soustraction
+- boolean, operateur logiques(ET:mult, NEG:moins, OU: DeMorgan )
+- Plus grand, division, modulo<br />
+- estPremier, prochainPremier, premierK  </p>
+<p>Ces exemples servent non seulement a se familiariser avec la structure des 
+programmes repeter, mais servent aussi de building blocks pour les structures 
+de donnees, ce qu'on va voir au prochain cours.</p>
+<h3>Code pour les programmes repeter</h3>
+<h4>Plus grand, division, modulo</h4>
+<h5>est Plus Grand: PG(x,y) = x &gt; y</h5>
+<div class="codehilite"><pre><span></span><code>z = moins(x,y)
+repeat z fois {
+    r_o = vrai
+}
+</code></pre></div>
+
+<h5>Plus grand ou egal: PGE(x,y): x &gt;= y</h5>
+<div class="codehilite"><pre><span></span><code>z = PG(y,x)
+r_0 = NEG(z)
+</code></pre></div>
+
+<h5>Division: DIV(a,b) = floor(a,b)</h5>
+<div class="codehilite"><pre><span></span><code><span class="nv">repeat</span> <span class="nv">a</span> <span class="nv">times</span> {
+    <span class="nv">z</span> <span class="o">=</span> <span class="nv">moins</span><span class="ss">(</span><span class="nv">a</span>,<span class="nv">b</span><span class="ss">)</span>
+    <span class="nv">pas_rendu</span> <span class="o">=</span> <span class="ss">(</span><span class="nv">z</span> <span class="o">&lt;=</span> <span class="nv">a</span><span class="ss">)</span>
+    <span class="k">if</span> <span class="nv">pas_rendu</span>, <span class="k">then</span> {
+    <span class="nv">inc</span><span class="ss">(</span><span class="nv">r_0</span><span class="ss">)</span>
+    }
+}
+</code></pre></div>
+
+<h5>Modulo: MOD(a,b) = a % b</h5>
+<p>My solution:</p>
+<div class="codehilite"><pre><span></span><code>repeat a times {
+    z = moins(a,b)
+    est_rendu = (z &lt; a)
+    si est_rendu, alors {
+    r_0 = z
+    }
+}
+</code></pre></div>
+
+<p>PP solution:</p>
+<div class="codehilite"><pre><span></span><code>b = div(x,y)
+c = mult(b,y)
+r_0 = moins(x,c)
+</code></pre></div>
+
+<h4>estPremier, prochainPremier, premierK</h4>
+<ul>
+<li>estPremier: return true si le nombre est premier  </li>
+<li>prochainPremier: retourne le prochaine nombre premier  </li>
+<li>premierK: retourne le k-ieme nombre premier </li>
+</ul>
+<h5>estPremier</h5>
+<p>Un nombre est premier s'il n'est divisible que par 1 et lui-meme.</p>
+<p>On teste si le modulo est nul pour chaque incrément</p>
+<div class="codehilite"><pre><span></span><code><span class="nf">if </span><span class="p">(</span><span class="n">x</span><span class="o">&gt;</span><span class="m">1</span><span class="p">){</span>
+    <span class="n">r_o</span> <span class="o">&lt;-</span> <span class="n">vrai</span>
+    <span class="n">temp</span> <span class="o">&lt;-</span> <span class="m">1</span>
+    <span class="nf">repeat </span><span class="p">(</span><span class="n">x</span><span class="m">-2</span><span class="p">)</span> <span class="n">fois</span> <span class="p">{</span>
+    <span class="nf">inc</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+    <span class="n">mod</span> <span class="o">&lt;-</span> <span class="nf">MOD</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">temp</span><span class="p">)</span>
+    <span class="nf">if </span><span class="p">(</span><span class="n">mod</span><span class="o">==</span><span class="m">0</span><span class="p">),</span> <span class="n">alors</span> <span class="n">r_0</span> <span class="o">=</span> <span class="n">false</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h5>ProchainPremier</h5>
+<p>Pour trouver le prochaine premier, on doit tester si le nombre est premier en incrementant chaque nombre et testant si ce dernier est premier.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">max_iter</span> <span class="o">&lt;-</span> <span class="nf">FACT</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="nf">inc</span><span class="p">(</span><span class="n">max_iter</span><span class="p">)</span>
+<span class="n">pas_fini</span> <span class="o">&lt;-</span> <span class="n">vrai</span>
+<span class="n">repeat</span> <span class="n">max_iter</span> <span class="p">{</span>
+    <span class="nf">inc</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">est_premier</span> <span class="o">&lt;-</span> <span class="nf">PREMIER</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="nf">if </span><span class="p">(</span><span class="n">pas_fini</span><span class="p">,</span> <span class="n">estPremier</span><span class="p">),</span> <span class="n">then</span> <span class="p">{</span>
+    <span class="n">r_0</span> <span class="o">&lt;-</span> <span class="n">x</span>
+    <span class="n">pas_fini</span> <span class="o">&lt;-</span> <span class="n">false</span> 
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h5>PremierK</h5>
+<div class="codehilite"><pre><span></span><code><span class="nf">inc</span><span class="p">(</span><span class="n">r_0</span><span class="p">)</span>
+<span class="n">repeat</span> <span class="n">k</span> <span class="n">fois</span> <span class="p">{</span>
+    <span class="n">r_0</span> <span class="o">&lt;-</span> <span class="nf">prochainPremier</span><span class="p">(</span><span class="n">r_0</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+
+    </body>
+</html>

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <meta name="date" content="2021-09-05" scheme="YYYY-MM-DD">
+        <meta name="date" content="2021-09-09" scheme="YYYY-MM-DD">
         <meta name="viewport" content="width=device-width" />
         <title>IFT2125 - TP 1</title>
         <link rel="stylesheet" href="style.css" type="text/css"
@@ -13,7 +13,78 @@
     <body>
 
 <h1>IFT2125 - TP 1</h1>
-<p>I missed the class, but it was an introduction to python</p>
+<h2>Overview</h2>
+<p>This class was an introduction to python and to asymptotic notations using 
+the definitions</p>
+<h2>Question 1 - Write an algorithm for euclid algorithm and prove it</h2>
+<h3>Euclid algorithm in python</h3>
+<p>Euclid algorithm says: <code>pgcd(a,b) = pgcd(b, a mod b)</code></p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">pgcd</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">b</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">%</span> <span class="n">b</span>
+    <span class="k">return</span> <span class="n">a</span>
+</code></pre></div>
+
+<h3>Proof for Euclid Algorithm</h3>
+<p>We prove it by contradiction.
+1. Let d = pgcd(a,b) and d'=pgcd(b, a mod b) and assume that d!=d'
+2. Since d != d', we have two cases: d&lt;d' and d'<d
+3. We can create a contradiction as follows: we show that d/d' is a common divisor 
+   of a/b/(a mod b) using pgcd definition and we show that it is a contradiction 
+   since d>d'</p>
+<p>QUESTION: What argument do we use to show that d' divides (a mod b)</p>
+<h2>Question 2 - Write an Algorithm for Bezout Identity (bonus: prove it)</h2>
+<p>Bezout Identity tells us that we can write the pgcd as a linear combination:
+<code>pgcd(a,b) = sa+tb</code></p>
+<h3>Code for Bezout Identity (TO REVIEW)</h3>
+<p>We return s,t, pgcd(a,b)</p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">pgcd_etendu</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">b</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="c1"># cas de base</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">a</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+    <span class="n">s1</span><span class="p">,</span> <span class="n">t1</span><span class="p">,</span> <span class="n">d</span> <span class="o">=</span> <span class="n">pgcd_etendu</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">%</span><span class="n">b</span><span class="p">)</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">t1</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">-</span> <span class="p">(</span><span class="n">a</span><span class="o">//</span><span class="n">b</span><span class="p">)</span><span class="o">*</span><span class="n">t1</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">d</span><span class="p">)</span>
+</code></pre></div>
+
+<h2>Question 3 - Write a naive algorithm to calculate the determinant of a matrix (TO REVIEW)</h2>
+<p>We want to calculate the determinant of a matrix with a sum of cofactors matrices</p>
+<div class="codehilite"><pre><span></span><code><span class="k">\sum</span><span class="nb">{}</span>
+</code></pre></div>
+
+<p>In words:
+1. choisir une ligne
+2. for all cofactors matrices in column, sum it</p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">det</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="n">i</span><span class="p">,</span><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span><span class="mi">0</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># cas de base</span>
+    <span class="k">return</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="mi">0</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)):</span>
+        <span class="n">s</span> <span class="o">+=</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="p">)</span> <span class="o">*</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">det</span><span class="p">(</span><span class="n">submatrix</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">s</span>
+
+<span class="k">def</span> <span class="nf">submatrix</span><span class="p">(</span><span class="n">A</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[[</span><span class="n">A</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">))</span> <span class="k">if</span> <span class="n">y</span><span class="o">!=</span><span class="n">j</span><span class="p">]]</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">))</span> <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span><span class="n">i</span><span class="p">]</span>
+</code></pre></div>
+
+<h2>Question 4 - Prove Asymptotic Notation using the definitions</h2>
+<h3>Rappel - Definitions: Big O, Big Omega, Big Theta</h3>
+<ul>
+<li>Big-O: \exists n_0 and c such that \forall n &gt; n_0, we have f(n) &lt;= c * g(n)</li>
+<li>Big-Omega: \exists n_0 and c such that \forall n &gt; n_0, we have f(n) &gt;= c * g(n)</li>
+<li>Big-Theta: f(n) \elem Big-O and Big-Omega</li>
+</ul>
+<h3>Examples</h3>
+<h4>Polynomial and exponential functions</h4>
+<p>Use definitions: fix n_0 and c</p>
+<h4>Sin, cos, ..</h4>
+<p>Remember that:
+- -1 &lt;= sin(x) &lt;= 1
+- -1 &lt;= cos (x) &lt;= 1</p>
+<p>Find n_0 and c </p>
 
     </body>
 </html>

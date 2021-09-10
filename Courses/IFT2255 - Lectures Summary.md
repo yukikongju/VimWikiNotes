@@ -7,8 +7,8 @@
 
 ### Semaine 2
 
-- IFT2255 - Week 2 Lecture 1
-- IFT2255 - Week 2 Lecture 2
+- [IFT2255 - Week 2 Lecture 1: Methodologies en genie logiciel: Processus Lineaire, Iteratif et Incremental](IFT2255 - Week 2 Lecture 1)
+- [IFT2255 - Week 2 Lecture 2](IFT2255 - Week 2 Lecture 2)
 
 ### Semaine 3
 

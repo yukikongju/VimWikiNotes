@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-09" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT2125 - TP 2</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT2125 - TP 2</h1>
+<h2>Overview</h2>
+<p>Ce TP focussait sur les theoremes limites pour prouver Big O</p>
+<p>Questions:
+- Montrer que si lim f(n)/g(n) = inf, alors f(n) \elem O(g(n))
+- Trouver 2 fonctions f(n) et g(n) telles que les 2 ne sont pas Big O de l'une de l'autre
+- Ordonner les fonctions </p>
+<h2>Part 1 - Rappel sur les theoremes limites et Big O</h2>
+<h3>Theoreme limite</h3>
+<p>lim f(n)/g(n):
+- = inf: f(n) croit plus vite que g(n)
+- = 0: f(n) croit plus lentement que g(n)
+- = c: les fonctions f et g croit a la meme vitesse par une constante pres</p>
+<h2>Part 2 - Questions</h2>
+<h3>Montrer que si lim f(n)/g(n) = inf, alors f(n) \elem O(g(n))</h3>
+<p>On veut faire une preuve par contradiction:
+- par definition: \exists c, n_0 tq \forall n&gt;n_0 =&gt; f(n) &lt;= c g(n)
+- par contre, on montre que f(n)/g(n) &gt; c, ce qui est une contradiction</p>
+<p>Questions: See more examples in B-B</p>
+<h3>Trouver 2 fonctions f(n) et g(n) telles que les 2 ne sont pas Big O de l'une de l'autre</h3>
+<p>Idee: on veut définir deux fonctions qui sont plus grandes l&lt;une que l'autre alternativement</p>
+<p>f(n) = n si pair; 1 si impair
+g(n) = 1 si pair; n si impair</p>
+<p>On cree une contradiction en definissant un k qui est pair/impair</p>
+<h3>Ordonner les fonctions</h3>
+<h4>Fonctions polynomiales</h4>
+<p>Utiliser le theoreme limites et la regle de l'hospital </p>
+<h4>Fonctions exponentielles et factorielles (a revoir)</h4>
+<p>On veut borner</p>
+
+    </body>
+</html>
