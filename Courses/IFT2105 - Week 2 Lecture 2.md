@@ -1,5 +1,8 @@
 # IFT2105 - Week 2 Lecture 2: Transition Programme Repeter a Tant que
 
+- [IFT2105 - Week 2 Lecture 2 - Video Lecture Notes](IFT2105 - Video Lecture 8 sept - Tableau de Godel et Fonction Ackermann)
+- [IFT2105 - Video Lecture - Programmes Tant Que](IFT2105 - Video Lecture - Programmes Tant Que)
+
 ## Overview
 
 Ce cours servait de pont entre les programmes repeter et les programmes tant que. 

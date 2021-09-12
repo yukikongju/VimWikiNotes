@@ -38,7 +38,7 @@
 - [X] Theorie 2
 - [X] TP 1
 - [X] Review TP 1
-- [ ] Weekly Review
+- [X] Weekly Review
 
 ## IFT3700 - Science des Données
 

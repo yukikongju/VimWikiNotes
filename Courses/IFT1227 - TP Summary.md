@@ -1,6 +1,6 @@
 ## IFT1227 - TP Summary
 
-- IFT1227 - TP 1
+- [IFT1227 - TP 1: Fonctions Canonique POS, SOP; Methode de Karnaugh et Quine-McKluskey pour simplifier les tables de verite](IFT1227 - TP 1)
 - IFT1227 - TP 2
 - IFT1227 - TP 3
 - IFT1227 - TP 4

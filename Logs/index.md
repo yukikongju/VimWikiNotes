@@ -14,6 +14,11 @@
 
 - [Webinars List](Webinars List)
 
+## Academia
+
+- [Dev Blogs List](Dev Blogs List)
+- CS Papers List
+
 ## Dev Technologies
 
 - [Dev Technologies to Explore](Dev Technologies to Explore)
@@ -34,4 +39,9 @@
 ## Installations
 
 - [Dev Installations Resources](Dev Installations Resources)
+
+## Udem Logs
+
+- [Bourses Udem](Bourses Udem)
+- [Connection SSH - Arcade IRO UdeM](Connection SSH - Arcade IRO UdeM)
 

@@ -8,7 +8,7 @@
 ### Semaine 2
 
 - [IFT2105 - Week 2 Lecture 1: Programmes Répéter; Tableaux Repeter (skipped)](IFT2105 - Week 2 Lecture 1)
-- [IFT2105 - Week 2 Lecture 2](IFT2105 - Week 2 Lecture 2)
+- [IFT2105 - Week 2 Lecture 2: Encodage de Godel; les programmes repeter ne peuvent pas calculer les fonctions Ackermann](IFT2105 - Week 2 Lecture 2)
 
 ### Semaine 3
 
