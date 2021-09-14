@@ -12,7 +12,7 @@
 
 ### Semaine 3
 
-- IFT2105 - Week 3 Lecture 1
+- [IFT2105 - Week 3 Lecture 1: Definition d'une machine de Turing; Configuration des transitions](IFT2105 - Week 3 Lecture 1)
 - IFT2105 - Week 3 Lecture 2
 
 ### Semaine 4

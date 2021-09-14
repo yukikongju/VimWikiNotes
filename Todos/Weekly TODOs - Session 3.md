@@ -2,7 +2,7 @@
 
 - [Weekly TODOs - Session 3 - Week 1](Weekly TODOs - Session 3 - Week 1)
 - [Weekly TODOs - Session 3 - Week 2](Weekly TODOs - Session 3 - Week 2)
-- Weekly TODOs - Session 3 - Week 3
+- [Weekly TODOs - Session 3 - Week 3](Weekly TODOs - Session 3 - Week 3)
 - Weekly TODOs - Session 3 - Week 4
 - Weekly TODOs - Session 3 - Week 5
 - Weekly TODOs - Session 3 - Week 6

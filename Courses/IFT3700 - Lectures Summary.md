@@ -12,7 +12,7 @@
 
 ### Semaine 3
 
-- IFT3700 - Week 3 Lecture 1
+- [IFT3700 - Week 3 Lecture 1: Puissance des données et méthode Scientifique](IFT3700 - Week 3 Lecture 1)
 - IFT3700 - Week 3 Lecture 2
 
 ### Semaine 4
