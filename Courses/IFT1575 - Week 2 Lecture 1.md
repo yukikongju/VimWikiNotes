@@ -1,4 +1,4 @@
-# IFT1575 - Week 2 Lecture 1
+# IFT1575 - Week 2 Lecture 2
 
 ## Overview
 

@@ -1,6 +1,6 @@
 ## IFT2105 - TP Summary
 
-- IFT2105 - TP 1
+- [IFT2105 - TP 1: Techniques de Preuves, Encodage de Godel, Incrementer Tableau encodee avec Godel](IFT2105 - TP 1)
 - IFT2105 - TP 2
 - IFT2105 - TP 3
 - IFT2105 - TP 4

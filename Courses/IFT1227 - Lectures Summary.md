@@ -2,17 +2,17 @@
 
 ### Semaine 1
 
-- [IFT1227 - Week 1 Lecture 1: Couches d'un ordi, portes logiques, bruit](IFT1227 - Week 1 Lecture 1)
-- [IFT1227 - Week 1 Lecture 2: Circuits combinatoires (representation + simplification)](IFT1227 - Week 1 Lecture 2)
+- [X] [IFT1227 - Week 1 Lecture 1: Couches d'un ordi, portes logiques, bruit](IFT1227 - Week 1 Lecture 1)
+- [X] [IFT1227 - Week 1 Lecture 2: Circuits combinatoires (representation + simplification)](IFT1227 - Week 1 Lecture 2)
 
 ### Semaine 2
 
-- [IFT1227 - Week 2 Lecture 1: Simplification des ciruits combinatoires: methode bulles, par observation et table de Karnaugh](IFT1227 - Week 2 Lecture 1)
-- [IFT1227 - Week 2 Lecture 2: Methode de réduction Quine-McKlusey](IFT1227 - Week 2 Lecture 2)
+- [X] [IFT1227 - Week 2 Lecture 1: Simplification des ciruits combinatoires: methode bulles, par observation et table de Karnaugh](IFT1227 - Week 2 Lecture 1)
+- [X] [IFT1227 - Week 2 Lecture 2: Methode de réduction Quine-McKlusey](IFT1227 - Week 2 Lecture 2)
 
 ### Semaine 3
 
-- IFT1227 - Week 3 Lecture 1
+- [X] [IFT1227 - Week 3 Lecture 1: Blocs Combinatoires (Multiplexeur, Decodeur); Délai, Glitch et Horloge; Circuits Séquentiels](IFT1227 - Week 3 Lecture 1)
 - IFT1227 - Week 3 Lecture 2
 
 ### Semaine 4

@@ -1,6 +1,6 @@
 ## IFT3700 - Chapter Revision
 
-- IFT3700 - Chapter 1
+- IFT3700 - Chapter 1 - Méthodologie
 - IFT3700 - Chapter 2
 - IFT3700 - Chapter 3
 - IFT3700 - Chapter 4

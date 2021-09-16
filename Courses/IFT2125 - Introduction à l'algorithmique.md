@@ -3,6 +3,15 @@
 ## Introduction
 
 Liste des chapitres:
+1. Appartenance Permutations
+2. Ordre Conditionnel et règle harmonique
+3. Algorithmes Voraces: Huffman, Matroids
+4. Diviser pour régner: Fast Fourier
+5. Programmation Dynamique
+6. Exploration de Graphes
+7. Algorithmes de Monte Carlo
+8. Algorithmes Parallèles
+
 
 ## Résumé par séance
 

@@ -2,18 +2,18 @@
 
 ### Semaine 1
 
-- [IFT3700 - Week 1 Lecture 1: No lecture](IFT3700 - Week 1 Lecture 1)
-- [IFT3700 - Week 1 Lecture 2: Quiz Preamtoire](IFT3700 - Week 1 Lecture 2)
+- [X] [IFT3700 - Week 1 Lecture 1: No lecture](IFT3700 - Week 1 Lecture 1)
+- [X] [IFT3700 - Week 1 Lecture 2: Quiz Preamtoire](IFT3700 - Week 1 Lecture 2)
 
 ### Semaine 2
 
 - IFT3700 - Week 2 Lecture 1: No lecture
-- [IFT3700 - Week 2 Lecture 2 Introduction](IFT3700 - Week 2 Lecture 2)
+- [X] [IFT3700 - Week 2 Lecture 2 Introduction](IFT3700 - Week 2 Lecture 2)
 
 ### Semaine 3
 
-- [IFT3700 - Week 3 Lecture 1: Puissance des données et méthode Scientifique](IFT3700 - Week 3 Lecture 1)
-- IFT3700 - Week 3 Lecture 2
+- [X] [IFT3700 - Week 3 Lecture 1: Puissance des données et méthode Scientifique](IFT3700 - Week 3 Lecture 1)
+- [ ] [IFT3700 - Week 3 Lecture 2: Modélisation et Biais Congnitifs](IFT3700 - Week 3 Lecture 2)
 
 ### Semaine 4
 

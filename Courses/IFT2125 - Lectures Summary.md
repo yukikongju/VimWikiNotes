@@ -2,17 +2,17 @@
 
 ### Semaine 1
 
-- [IFT2125 - Week 1 Lecture 1: Plan de cours](IFT2125 - Week 1 Lecture 1)
-- [IFT2125 - Week 1 Lecture 2: Notation Asymptotique, pgcd, apartenance permutations](IFT2125 - Week 1 Lecture 2)
+- [ ] [IFT2125 - Week 1 Lecture 1: Plan de cours](IFT2125 - Week 1 Lecture 1)
+- [X] [IFT2125 - Week 1 Lecture 2: Notation Asymptotique, pgcd, apartenance permutations](IFT2125 - Week 1 Lecture 2)
 
 ### Semaine 2
 
-- [IFT2125 - Week 2 Lecture 1: Tamisage](IFT2125 - Week 2 Lecture 1)
-- [IFT2125 - Week 2 Lecture 2: Condition d'arret du Tamisage, Propriete du tamisage: toute permutations s'expriment comme le produit des lignes precedantes](IFT2125 - Week 2 Lecture 2)
+- [X] [IFT2125 - Week 2 Lecture 1: Tamisage](IFT2125 - Week 2 Lecture 1)
+- [ ] [IFT2125 - Week 2 Lecture 2: Condition d'arret du Tamisage, Propriete du tamisage: toute permutations s'expriment comme le produit des lignes precedantes](IFT2125 - Week 2 Lecture 2)
 
 ### Semaine 3
 
-- IFT2125 - Week 3 Lecture 1
+- [ ] [IFT2125 - Week 3 Lecture 1](IFT2125 - Week 3 Lecture 1)
 - IFT2125 - Week 3 Lecture 2
 
 ### Semaine 4
