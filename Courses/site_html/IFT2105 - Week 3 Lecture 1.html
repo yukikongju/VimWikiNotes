@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-17" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT2105 - Week 3 Lecture 1</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT2105 - Week 3 Lecture 1 - Definition d'une machine de Turing; Configuration des transitions</h1>
+<h2>Overview</h2>
+<p>On a commence le chapitre 3.1 - Les machines de Turings. </p>
+<p>Sections:
+1. Qu'est-ce qu'une machine de Turing<br />
+2. Definitions: alphabet, mot, language, ...<br />
+3. Formulation d'un probleme de Turing</p>
+<h3>Part 1 - Qu'est-ce qu'une machine de Turing</h3>
+<p>Une machine de Turing est un modele qui utilise un ruban et des etats de 
+transitions pour representer un programme. Plus generalement, on veut definir 
+une fonction: Q x T = Q x T x {G,D}</p>
+<p>Cette fonction de transition prend en input l'etat de depart et l'alphabet 
+de ruban, qui nous permet de savoir dans quel etat transitionner, quoi ecrire 
+sur le ruban et dans quelle direction se deplacer apres</p>
+<ul>
+<li>Inputs: etats de depart, alphabet de ruban </li>
+<li>Outputs: etats final, alphabet de ruban, gauche/droite</li>
+</ul>
+<h3>Part 2 - Definitions: alphabet, mot, language, ...</h3>
+<p>On veut definir 4 definitions importantes:
+- Alphabet: ensemble de symboles non-vide
+- Mot: suite de symboles forme des "lettres" de l'alphabet (peut etre vide: \epsilon)
+- \Sigma *: ensemble de tous les mots pouvant etre forme par l'alphabet
+- Language: sous-ensemble de \sigma *</p>
+<p>On peut aussi creer de nouveaux mots avec les symboles suivants:
+- longueur de mot: |w|
+- nombre d'occurences de la lettre a dans le mot w: |w| _ a
+- inverser le mot: w^R
+- concatenation: w=xy</p>
+<p>Remarques:
+- le mot vide \epsilon, ne fait pas partie du language vide {}</p>
+<h3>Part 3 - Formulation d'un probleme de Turing</h3>
+<h4>Machine de Turing - 6-Tuplets</h4>
+<p>Formellement, on designe une machine de Turing comme un 6-Tuplet:
+- Q: les etats de transitions
+- \sigma: l'alphabet
+- \Gamma: l'alphabet de ruban
+- \delta: la fonction d'etat
+- F: Ensemble des etats finaux; F = {q_A, q_R}, ou q_A: etats acceptant; q_R: etats refusant
+- q_0: l'etat initial</p>
+<h4>Configurations des transitions</h4>
+<p>On definit une transition comme un triplet [u,q,v]:
+- u: l'alphabet ruban a gauche de l'etat present
+- q: l'etat present
+- v: l'alphabet ruban a droite de l'etat present</p>
+<p>Pour noter la transition d'un triplet a un autre, on utilse les symboles:
+- c |- c' : transition de l'etat c à c' en une étape de calcul
+- c |-* c': transition de l'etat c à c' en 0 ou plus d'étape</p>
+<h3>Comment déterminer si la machine de Turing accepte ou non les mots</h3>
+<p>La machine de Turing accepte les mots dépendemment si l'état de transition en 
+output est un état acceptant ou un état refusant:<br />
+- MT accepte si: (\espilon, q_0, w) |- * (u,q_A, v)
+- MT refuse si: (\espilon, q_0, w) |- * (u,q_R, v)</p>
+
+    </body>
+</html>

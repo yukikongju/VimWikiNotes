@@ -18,7 +18,7 @@ Liste des chapitres:
 
 ## Liste de Concepts
 
-- IFT1227 - Concepts List
+- [IFT1227 - Concepts List](IFT1227 - Concepts List)
 
 ## Questions
 

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-17" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT2105 - Video Lecture 8 sept - Tableau de Godel et Fonction Ackermann</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT2105 - Week 2 Lecture 2 - Video Lecture Notes</h1>
+<h2>Overview</h2>
+<ol>
+<li>Tableau avec codage de Godel (assignation, lecture des elements)</li>
+<li>Les programmes repeter sont moins performants que les programmes Tant que</li>
+</ol>
+<h2>Structure de donnees - Tableau avec Codage de Godel</h2>
+<p>Encoder les valeur d'un tableau avec un nombre (meme principle avec liste de listes)</p>
+<h3>Comment l'encodage de Godel encode les elements du tableau</h3>
+<p>Chaque element est l'exposant du i-eme nombre premier</p>
+<p>Ex: [5,2,7,8,6] -&gt; <code>2^5 3^2 5^7 7^8 11^6</code> </p>
+<p>Code pour l'assignation </p>
+<div class="codehilite"><pre><span></span>
+</pre></div>
+
+
+<h3>Comment lire les elements du tableau a partir du nombre</h3>
+<h2>Part 2 - Les programmes repeter sont moins puissants que les programmes tant que</h2>
+<p>Pour montrer que les programmes repeter sont moins puissants, 
+on veut definir une famille de fonctions, qu'on nomme Ackermann, qui ne peut pas etre calculee par les programmes REPETER</p>
+<h3>Fonction d'Ackermann</h3>
+<p>On definit la fonction Ackermann B_i:
+- x+1 si i=0
+- B_{i-1} ^ {x+1} (1) si i&gt;0</p>
+<p>Pour se faire, on veut construire notre preuve avec les preuves suivantes:
+1. Lemme: B_{i+1} est calculable par un programme repeter avec
+    une profondeur de boucle i (preuve par recurrence sur i)
+2. Theoreme:</p>
+<h3>Lemme: B_{i+1} est calculable par un programme repeter avec une profondeur de boucle i (preuve par recurrence sur i)</h3>
+<p>En calculant les premiers B_i, on voit qu'on multiplie a chaque fois B_i(x) = 2^2^2^2^... -3</p>
+<h3>Proprietes des fonctions Ackermann (x4)</h3>
+<p>On utilise ces proprietes pour montrer le theoreme suivant </p>
+<h3>Theoreme: Pour tout programme repeter P, si la profondeur de boucle B(P)=i, pour tous les registres, M(P, r_0, ...) est borne par B_{i+1}^<l(P)>(max registers)</h3>
+<p>M: Valeur maximale de tous les registres</p>
+<p>Preuve par recurrence structurelle (S_0, R_1, R_2)</p>
+<h3>Corollaire: Pour tout i&gt;=0, il existe une fonction qui n'est pas calculable par un programme repeter de longueur i, mais qui est calculable avec un programme de boucle i+1</h3>
+<h3>Theoreme: A(i,x) n'est pas calculable par un programme repeter (preuve par contradiction)</h3>
+<p>On cree notre contradiction en montrant que 
+- A(l+2, l) = B_{l+1}(2l) a l'aide du theoreme sur la borne des ligne
+- A(l+2, l) a l'aide de la definition/ corollaire?</p>
+<h2>En Resume</h2>
+<p>Le cours s'est fait en 2 parties;
+1. Tableau dans un programme repeter a l'aide de l'encodage de Godel
+2. Les programmes repeter ne peuvent pas calculer les fonctions Ackermann</p>
+<h3>Part 1 - Tableau dans un programme repeter a l'aide de l'encodage de Godel</h3>
+<p>On veut encoder les tableaux a l'aide de nombres premiers. 
+L'encodage de Godel nous dit que si le tableau est de taille n, le nombre cree est le produit des i-emes nombres premiers a l'exposant T[i]</p>
+<p>Si on a le tableau [3,6,9], on obtient N=2^3 * 5^6 * 7^9 </p>
+<ul>
+<li>QUESTION: Comment decoder les valeurs dans le tableau d'un programme repeter a l'aide de lencodage de Godel?</li>
+</ul>
+<p>Pour chaque case dans le tableau, on veut diviser par le i-eme nombre prime. Tant que le nombre est divisible, on incremente la valeur du nombre</p>
+<div class="codehilite"><pre><span></span><span class="n">for</span> <span class="n">i</span> <span class="n">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="bp">T</span><span class="p">))</span><span class="o">:</span>
+    <span class="n">prime</span> <span class="o">&lt;-</span> <span class="n">find</span> <span class="n">k</span><span class="o">-</span><span class="n">ieme</span> <span class="n">prime</span> <span class="n">number</span>
+    <span class="n">valeur</span><span class="o">=</span><span class="m">0</span>
+    <span class="n">while</span> <span class="n">N</span> % <span class="n">prime</span> <span class="o">!=</span> <span class="m">0</span><span class="o">:</span>
+    <span class="n">valeur</span><span class="o">++</span><span class="p">;</span>
+</pre></div>
+
+
+<h3>Part 2 - Les programmes repeter ne peuvent pas calculer les fonctions Ackermann</h3>
+<p>On doit se souvenir que les programmes repeter ne sont pas autant puissants que les programmes tant que. On verra plus tard que ceux-ci permettent des boucles infinies.</p>
+<p>Pour se faire, on veut montrer qu'ils existent des fonctions que les programmes repeter ne peuvent pas calculer: les fonctions Ackermann.</p>
+<p>Une fonction Ackermann est definie de la facon suivante:
+- si i=0: B_i(x) = x+1
+- si i&gt;=0: B_i(X) = B_{i-1} ^{i+1)}(1) </p>
+<p>Pour se faire, on veut construire cette preuve avec quelques lemmes/theoremes/corollaires:
+1. Lemme: B_{i+1} est calculable avec un programme repeter avec une boucle de profondeur i 
+=&gt; la preuve se fait par induction (a revoir)
+2. Theoreme: Pour tout programme repeter de profondeur B(P)=i, le nombre de lignes de se programmes P, noté M(P), est borne par la fonction Ackermann B_{i+1}^{nb le lignes} (1)
+=&gt; la preuve se fait avec les 4 proprietes et avec une preuve par recurrence structurelle: On montre que:
+    1. S_0 est valide: les programmes repeter a une ligne sont bornees
+    2. R_1 est valide: la concatenation est bornee
+    3. R_2 est valide (plus difficile): un programme repeter P qui est repeter n fois est aussi bornee 
+3. Corrolaire: Tout Programme Repeter qui n'est pas calculable avec une boucle de profondeur i peut etre calculee avec une boucle de profondeur i+1
+4. Theoreme (but final!!): Les programmes repeter ne peuvent pas calculer les fonctions Ackermann
+=&gt; (preuve par contradiction): on se sert du theoreme sur la borne du nombre de lignes et du lemme/def pour montrer qu'il y a contradiction</p>
+
+    </body>
+</html>

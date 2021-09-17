@@ -25,7 +25,7 @@ Liste des chapitres:
 
 ## Liste de Concepts
 
-- IFT1575 - Concepts List
+- [IFT1575 - Concepts List](IFT1575 - Concepts List)
 
 ## Questions
 

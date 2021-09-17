@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-17" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>VimWiki Upgrades Ideas </title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>VimWiki Upgrades Ideas</h1>
+<h2>Creating Tags Index for TODOs, Questions and review</h2>
+<p>In Course Notes, create a vimwiki link with all the tags in index. For example:</p>
+<p>In Course Index:</p>
+<div class="codehilite"><pre><span></span>### IFT1215 - Course Name
+
+- IFT1215 - Concepts to Review
+- IFT1215 - Questions
+</pre></div>
+
+
+<p>Inside Course Index:</p>
+<div class="codehilite"><pre><span></span>- QUESTION: What is the argument for Bezout Identity Proof
+- TODO: complete notes for Beozout Identity
+</pre></div>
+
+
+<p>Inside Tag Index: (recursive structure)</p>
+<div class="codehilite"><pre><span></span># IFT1215 - To Review
+
+## IFT1215 - Lecture Notes
+
+### IFT1215 - Week 1 - Theory 1
+
+- [ ] QUESTION: (...)
+</pre></div>
+
+    </body>
+</html>

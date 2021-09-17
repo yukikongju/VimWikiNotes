@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-17" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT2125 - Week 3 Lecture 1</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT2125 - Week 3 Lecture 1 - Retour sur les preuves du problème d'appartenance; Rappel sur les définitions de la notation asymptotique; ordre conditionnel et règle de l'harmonie</h1>
+<h2>Overview</h2>
+<p>La première portion du cours était un rappel des preuves sur l'algorithme 
+de tamisage pour résoudre le problème d'appartenance de permutations.</p>
+<p>La deuxième partie du cours était un rappel sur les propriétés asymptotiques 
+des fonctions. On a revu les définitions de Big O, Big Omega, Big Theta, ainsi que les théorèmes limites.</p>
+<p>La dernière partie du cours nous introduisait la notion d'ordre conditionnel. Parfois, la fonction définit nous permet que de donner une borne asymptotique pour certaine valeur de n. Pour pouvoir enlever ces conditions, on veut utiliser la règle harmonique, qui nous dit que si une fonction est:
+- éventuellement non-decreasing 
+- f(n) Big Theta f(bn)</p>
+<p>alors on peut enlever le conditionnel</p>
+<p>Sections:
+1. Grandes lignes sur les preuves du problème d'appartenance permutations<br />
+2. Révision de la notation asymptotique: définitions Big O, Big Omega, Big Theta; Théorèmes Limites
+3. Ordre conditionnel et et règle de l'harmonie</p>
+<h2>Part 1 - Grandes lignes sur les preuves du problème d'appartenance permutations (TO REVIEW)</h2>
+<p>Il y a 5 propriétés à retenir:
+1. Toutes permutations tamisée s'écrit sous la forme a_m * a_{m-1} * ... * a_1 -&gt; les permutations s'écrivent comme le produit des permutations sur les lignes précédantes (<strong>)
+2. L'ensemble des permutations G=<P_1, ..., P_n> inclu dans {Q_i}
+3. Tout Q_i s'écrit sous la forme (</strong>)
+4. Il existe une bijection entre G et les Q_i</p>
+<h2>Part 2 - Révision de la notation asymptotique</h2>
+<h3>Definitions de Big O, Big Theta, Big Omega</h3>
+<h3>Théorèmes Limites</h3>
+<p>Si lim f(n)/g(n):
+- cst c: f(n) et g(n) croit à la même vitesse par un facteur constant -&gt; Big Theta
+- infini: f(n) croit plus vite -&gt; Big O
+- 0: g(n) croit plus vite -&gt; Big Omega</p>
+<h2>Part 3 - Ordre conditionnel et et règle de l'harmonie</h2>
+<h3>Qu'est-ce que l'ordre conditionnel</h3>
+<p>Parfois, certaines fonctions sont définies seulement pour certaines valeur de n, 
+alors on ne connait que son comportement (et donc son ordre) que pour certaines 
+valeurs.</p>
+<ul>
+<li>Définition de l'ordre conditionnel:</li>
+</ul>
+<p>Remarques: à cause de l'implication, l'ordre conditionnel est toujours vrai si 
+P(x) est faux.</p>
+<h3>À quoi sert la règle de l'harmonie</h3>
+<p>La règle de l'harmonie sert à enlever la condition de l'ordre conditionnel. Pour 
+se faire, on doit vérifier 2 propriétés:
+1. la fonction t(n) doit être évantuellement non-décroissante<br />
+2. La fonction t(n) doit être smooth, c-à-d indépendante de sa constante -&gt; t(n) = t(2n)</p>
+<p>Remarque: En général, la les fonctions exponentielles ne sont pas smooth</p>
+
+    </body>
+</html>

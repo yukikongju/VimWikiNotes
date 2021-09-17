@@ -14,6 +14,11 @@
 - vim-which-key
 - vim-spector
 
+- Debugger
+- File Manager
+- 
+
+
 
 ## System
 
@@ -23,3 +28,8 @@
 ## Apps
 
 - vimwiki
+
+## Ressources
+
+- [Reddit's List Plugins](https://www.reddit.com/r/vim/comments/3tluqr/my_list_of_applications_with_vi_keybindings/)
+

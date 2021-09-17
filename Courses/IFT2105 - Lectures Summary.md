@@ -2,18 +2,18 @@
 
 ### Semaine 1
 
-- [IFT2105 - Week 1 Lecture 1: Techniques de Preuves](IFT2105 - Week 1 Lecture 1)
-- [IFT2105 - Week 1 Lecture 2: Notations Asymptotiques et Programmes Répéter](IFT2105 - Week 1 Lecture 2)
+- [X] [IFT2105 - Week 1 Lecture 1: Techniques de Preuves](IFT2105 - Week 1 Lecture 1)
+- [X] [IFT2105 - Week 1 Lecture 2: Notations Asymptotiques et Programmes Répéter](IFT2105 - Week 1 Lecture 2)
 
 ### Semaine 2
 
-- [IFT2105 - Week 2 Lecture 1: Programmes Répéter; Tableaux Repeter (skipped)](IFT2105 - Week 2 Lecture 1)
-- [IFT2105 - Week 2 Lecture 2: Encodage de Godel; les programmes repeter ne peuvent pas calculer les fonctions Ackermann](IFT2105 - Week 2 Lecture 2)
+- [X] [IFT2105 - Week 2 Lecture 1: Programmes Répéter; Tableaux Repeter (skipped)](IFT2105 - Week 2 Lecture 1)
+- [ ] [IFT2105 - Week 2 Lecture 2: Encodage de Godel; les programmes repeter ne peuvent pas calculer les fonctions Ackermann](IFT2105 - Week 2 Lecture 2)
 
 ### Semaine 3
 
-- [IFT2105 - Week 3 Lecture 1: Definition d'une machine de Turing; Configuration des transitions](IFT2105 - Week 3 Lecture 1)
-- IFT2105 - Week 3 Lecture 2
+- [X] [IFT2105 - Week 3 Lecture 1: Definition d'une machine de Turing; Configuration des transitions](IFT2105 - Week 3 Lecture 1)
+- [ ] [IFT2105 - Week 3 Lecture 2: Graphe Machine de Turing; Les machines de Turing sont équivalents aux programmes tant que; Lambda-Calcul](IFT2105 - Week 3 Lecture 2)
 
 ### Semaine 4
 

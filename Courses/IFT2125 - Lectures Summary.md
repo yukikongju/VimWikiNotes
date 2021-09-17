@@ -2,7 +2,7 @@
 
 ### Semaine 1
 
-- [ ] [IFT2125 - Week 1 Lecture 1: Plan de cours](IFT2125 - Week 1 Lecture 1)
+- [X] [IFT2125 - Week 1 Lecture 1: Plan de cours](IFT2125 - Week 1 Lecture 1)
 - [X] [IFT2125 - Week 1 Lecture 2: Notation Asymptotique, pgcd, apartenance permutations](IFT2125 - Week 1 Lecture 2)
 
 ### Semaine 2
@@ -12,7 +12,7 @@
 
 ### Semaine 3
 
-- [ ] [IFT2125 - Week 3 Lecture 1](IFT2125 - Week 3 Lecture 1)
+- [X] [IFT2125 - Week 3 Lecture 1: Retour sur les preuves du problème d'appartenance; Rappel sur les définitions de la notation asymptotique; ordre conditionnel et règle de l'harmonie](IFT2125 - Week 3 Lecture 1)
 - IFT2125 - Week 3 Lecture 2
 
 ### Semaine 4

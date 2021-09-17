@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-17" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT2125 - Week 2 Lecture 2</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT2125 - Week 2 Lecture 2</h1>
+<h2>Overview</h2>
+<p>This lecture was a continuation on the principle of TAMISAGE.</p>
+<p>Sections:
+1. Trace du Tamisage: que ce passe-t-il lorsqu'on entre dans le if/else 
+2. Propriété du Tamisage #1: Le nombre de permutations generees par le tableau 
+   est donne par le produit du (nombre de permutations par ligne +1)
+3. Propriété #2: Toute permutation peut s'écrire comme le produit des permutations
+   des lignes avant elles</p>
+<h2>Rappel - Le probleme d'appartenance permutations et le principe de tamisage</h2>
+<p>Given a permutation, we want to find wether a bunch of permutations P_i 
+generates that permutations. Naively, we can simulate all these permutations, 
+but the results will be quite slow. Instead, we want to use TAMISATION.</p>
+<h3>Principe de Tamisation</h3>
+<div class="codehilite"><pre><span></span><span class="n">tamisage</span><span class="p">(</span><span class="n">pi</span><span class="p">):</span>
+    <span class="k">while</span> <span class="n">pi</span> <span class="o">!=</span> <span class="n">epsilon</span><span class="p">:</span>
+    <span class="n">i</span> <span class="o">&lt;-</span> <span class="nb">min</span><span class="p">{</span><span class="n">index</span> <span class="n">non</span><span class="o">-</span><span class="n">fixe</span><span class="p">}</span>
+    <span class="n">j</span> <span class="o">&lt;-</span> <span class="n">mapping</span> <span class="n">de</span> <span class="n">la</span> <span class="n">permutation</span> <span class="n">de</span> <span class="n">i</span>
+    <span class="k">if</span> <span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="n">epsilon</span><span class="p">:</span>
+        <span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">permutation</span> <span class="n">pi</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">pi</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">inverse</span> <span class="n">T</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">]</span>
+</pre></div>
+
+
+<p>Principles:
+- On veut rouler l'algorithme sur les index qui mappent a eux-memes, car on 
+  va obtenir de nouvelles permutations</p>
+<h2>QUESTION: Quelle est la condition d'arret pour l'algorithme du tamisage?</h2>
+<p>On n'obtient plus de nouvelles permutations</p>
+<h2>Comment savoir si la permutation P est generer par les permutations P_i</h2>
+<p>Pour determiner si la permutation P est generer par les permutations P_i, 
+on execute l'algorithme complet, puis on roule tamisage une derniere fois pour
+obtenir une permutation, qui nous envoie vers T[i,j]:
+- si T[i,j] == epsilon: (pas de collision) -&gt; la permutation n'est pas généré
+- si T[i,j] != epsilon: (collision) -&gt; la permutation est généré</p>
+<p>Pourquoi: voir preuve</p>
+<h2>Preuve - Toute permutation peut s'ecrire comme le produit des permutations des lignes avant elle</h2>
+<p>Enonce: si m tours de la boucle suffisent pour tamiser la permutations pi, alors pi peut s'exprimer comme le produit des lignes precedantes</p>
+<p>Cette preuve se fait par induction</p>
+<h3>Cas de base</h3>
+<p>Par hypothese, la permutation pi n'est pas l'identite. Ainsi, trivialement, on ne rentre jamais dans la loop. L'enonce est donc faux, ce qui rend l'implication vraie.</p>
+<h3>Pas d'induction</h3>
+<p>On doit gere 2 cas:
+- T[i,j] == epsilon: on insere la permutation pi elle-meme; on peut ecrire pi comme le produit des autres permutations
+- T[i,j] != espilon: on a une collision (a prouver !!)</p>
+<h4>Collision: T[i,j] != epsilon (TO REVIEW)</h4>
+
+    </body>
+</html>

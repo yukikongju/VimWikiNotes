@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-17" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT2105 - Video Lecture - Programmes Tant Que</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT2105 - Video Lecture - Programmes Tant Que</h1>
+<h2>Overview</h2>
+<p>Sections:
+1. Programmes Tant Que<br />
+2. Les programmes tant que sont plus puissants que les programmes repeter</p>
+<h2>Part 1 - Programmes Tant Que</h2>
+<p>Les programmes tant que sont des programmes repeter, mais dont les boucles sont definis de facon a permettre des boucles infinies.</p>
+<p><code>tant que r_i != r_j { ... }</code></p>
+<p>Le sucre syntaxique est les fonctions booleennes sont donc definies de la meme maniere</p>
+<h2>Part 2 - Les programmes tant que sont plus puissants que les programmes repeter</h2>
+<p>Le cours dernier, nous avons montrer qu'il existait des programmes que les programmes repeter ne peuvent calculer: les fonctions Ackermann.</p>
+<p>Pour montrer que les programmes tant que sont plus puissants que les programmes repeter, nous avons qu'a montrer que les programme tant que peuvent resoudre les fonctions Ackermann</p>
+<h3>Preuve: les programmes tant que peuvent calculer les fonctions Ackermann (TO REVIEW)</h3>
+<p>On redefinit une fonction Ackermann A(i,x) et on travaille avec une pile:
+- si i=0: x+1 -&gt; remplace i par x+1
+- si i&gt;0 et x=0: A(i-1, 1)
+- sinon: A(i-1, A(i, x-1)) -&gt; add A(i, x-1) on top of the stack </p>
+<h4>Pseudo code tant que (TO COMPLETE)</h4>
+
+    </body>
+</html>

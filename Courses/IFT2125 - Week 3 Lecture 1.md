@@ -1,4 +1,4 @@
-# IFT2125 - Week 3 Lecture 1
+# IFT2125 - Week 3 Lecture 1 - Retour sur les preuves du problème d'appartenance; Rappel sur les définitions de la notation asymptotique; ordre conditionnel et règle de l'harmonie
 
 ## Overview
 
@@ -41,5 +41,23 @@ Si lim f(n)/g(n):
 
 ## Part 3 - Ordre conditionnel et et règle de l'harmonie
 
+### Qu'est-ce que l'ordre conditionnel
 
+Parfois, certaines fonctions sont définies seulement pour certaines valeur de n, 
+alors on ne connait que son comportement (et donc son ordre) que pour certaines 
+valeurs.
+
+- Définition de l'ordre conditionnel:
+
+Remarques: à cause de l'implication, l'ordre conditionnel est toujours vrai si 
+P(x) est faux.
+
+### À quoi sert la règle de l'harmonie
+
+La règle de l'harmonie sert à enlever la condition de l'ordre conditionnel. Pour 
+se faire, on doit vérifier 2 propriétés:
+1. la fonction t(n) doit être évantuellement non-décroissante  
+2. La fonction t(n) doit être smooth, c-à-d indépendante de sa constante -> t(n) = t(2n)
+
+Remarque: En général, la les fonctions exponentielles ne sont pas smooth
 

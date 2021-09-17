@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-17" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>Ubuntu Installations</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>Ubuntu Installations</h1>
+<h2>Step 1: Install vim with +python</h2>
+<p><code>sudo apt install vim-gtk vim-nox</code></p>
+<h2>Step 2: Install Dotfiles</h2>
+<p>1) Add git and nodejs, cmdtest for coc.nvim</p>
+<p><code>sudo apt install git nodejs cmdtest npm ctags fzf</code></p>
+<p>2) Clone dotfiles</p>
+<p><code>git clone https://github.com/yukikongju/dotfiles</code></p>
+<p>3) generate symlinks for .vim, snippets, bashrc, tmux.conf</p>
+<div class="codehilite"><pre><span></span>./dotfiles/scripts/vim.sh 
+./dotfiles/scripts/snippets.sh 
+</pre></div>
+
+
+<p>4) Install Vim Plug for Linux</p>
+<div class="codehilite"><pre><span></span><span class="s s-Atom">sh</span> <span class="o">-</span><span class="s s-Atom">c</span> <span class="s s-Atom">&#39;curl -fLo &quot;${XDG_DATA_HOME:-$HOME/.local/share}&quot;/nvim/site/autoload/plug.vim --create-dirs \</span>
+<span class="s s-Atom">       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim&#39;</span> 
+</pre></div>
+
+
+<p>5) Install Pluggins inside vim with <code>:PlugInstall</code></p>
+<p>6) Activate coc.nvim by going into coc.vim directory and yarn install</p>
+<div class="codehilite"><pre><span></span>cd .vim/plugged/coc.nvim
+yarn install
+</pre></div>
+
+
+<p>If error, see <code>:CocInfo</code> to debug</p>
+<h2>Step 3: Install tmux</h2>
+<p><code>sudo install tmux</code></p>
+<h2>Step 4: Install Latex Compiler and viewer</h2>
+<p>1) Install pdflatex Compiler</p>
+<p><code>sudo apt install texlive-latex-base latexmk evince</code></p>
+<p>2) Install Extra latex packages</p>
+<p><code>sudo apt install texlive-latex-extra texlive-bibtex-extra</code></p>
+<h2>Step 5: Install Python</h2>
+<p><code>sudo apt install python3-pip</code></p>
+<h2>Step 6: Install Vimwiki</h2>
+<p>1) Install :VimWiki2HTML</p>
+<p><code>pip install vimwiki-markdown</code></p>
+<p>2) Install Ruby so that vimwiki-markdown can compile</p>
+<p><code>sudo apt-get install ruby-full</code></p>
+<h2>Step 7: Install fuzzy finder</h2>
+<p><code>sudo install ripgrep the-silver-searcher</code></p>
+<h3>TODOs</h3>
+<ul>
+<li>[ ] Vimwiki2HTML doesn't work</li>
+<li>[ ] </li>
+</ul>
+
+    </body>
+</html>

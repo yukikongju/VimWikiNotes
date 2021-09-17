@@ -27,7 +27,7 @@ Liste des chapitres:
 
 ## Liste de Concepts
 
-- IFT2125 - Concepts List
+- [IFT2125 - Concepts List](IFT2125 - Concepts List)
 
 ## Questions
 
