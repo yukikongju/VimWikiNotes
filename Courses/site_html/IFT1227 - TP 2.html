@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-23" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT1227 - TP 2</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT1227 - TP 2</h1>
+<h2>Part 1 - Traduire les fonctions en multiplexeur et encodeur</h2>
+<p>IL faut se souvenir que:
+- multiplexeur: lookup table -&gt; relier les minterms à la source (-|) et les zéros 
+  au ground (triangle)
+- encodeur: one encoding; si n entrées, alors 2^n sorties; les entrées produisant des 
+  1 sont reliés à une porte OU</p>
+<p>Trucs:
+- Lorsqu'on nous demande de faire un MUX à moins d'entrées, il faut essayer de 
+  faire une table de vérité; ainsi, dans les outputs, on peut voir plus facilement 
+  les résultats [Gab Ste-Marie]
+- Si la fonction qu'on essait de représenter à moins de 1 que de 0, utiliser les 
+  minterms; sinon, utiliser les maxterms [Michael]
+- on peut voir quelles fonctions on peut simplifier si à partir de la fonction 
+  canonique si on utilise les règles de l'algèbre de Boole (ex: A et non A = T) [Tasha]</p>
+
+    </body>
+</html>

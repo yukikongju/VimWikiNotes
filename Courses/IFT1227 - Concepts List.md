@@ -18,6 +18,23 @@
 	* Décodeur
 
 - Chapter 3: Circuits Séquentiels
-    * Bistable et SR Latch (table de vérité; circuit; input/output behavior)
+    * From Bistable to Flip-Flop D [why we build up to the other]
+	* Bistable
+	* Latch SR
+	* Latch D
+	* Flip-Flop D
+    * Building registers using Flip-Flop D (Enable, Reset, Set)
+    * Problematic Circuits
 
-
+- Chapter 4: Finite State Machines
+    * Qu'est-ce qu'un FSM
+    * Graphe de transitions:
+	* Représentation Melay
+	* Représentation Moore
+    * Comment dessiner un circuit séquentiels avec un FSM:
+	1. Tracer le graphe de transitions
+	2. Tracer le tableau de transitions
+	3. Tracer la table de vérité
+	4. Trouver les fonctions canoniques pour les sorties
+	5. Faire le ciruit séquentiel
+    

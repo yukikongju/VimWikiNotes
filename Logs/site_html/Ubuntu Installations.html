@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <meta name="date" content="2021-09-17" scheme="YYYY-MM-DD">
+        <meta name="date" content="2021-09-29" scheme="YYYY-MM-DD">
         <meta name="viewport" content="width=device-width" />
         <title>Ubuntu Installations</title>
         <link rel="stylesheet" href="style.css" type="text/css"
@@ -44,23 +44,35 @@ yarn install
 <p><code>sudo install tmux</code></p>
 <h2>Step 4: Install Latex Compiler and viewer</h2>
 <p>1) Install pdflatex Compiler</p>
-<p><code>sudo apt install texlive-latex-base latexmk evince</code></p>
+<p><code>sudo apt install texlive-latex-base latexmk evince pandoc</code></p>
 <p>2) Install Extra latex packages</p>
 <p><code>sudo apt install texlive-latex-extra texlive-bibtex-extra</code></p>
 <h2>Step 5: Install Python</h2>
 <p><code>sudo apt install python3-pip</code></p>
 <h2>Step 6: Install Vimwiki</h2>
-<p>1) Install :VimWiki2HTML</p>
+<p>1) Install :VimWiki2HTML [Works inside tmux, but not in terminal]</p>
 <p><code>pip install vimwiki-markdown</code></p>
 <p>2) Install Ruby so that vimwiki-markdown can compile</p>
 <p><code>sudo apt-get install ruby-full</code></p>
 <h2>Step 7: Install fuzzy finder</h2>
+<p>1) Install Code Searcher</p>
 <p><code>sudo install ripgrep the-silver-searcher</code></p>
-<h3>TODOs</h3>
-<ul>
-<li>[ ] Vimwiki2HTML doesn't work</li>
-<li>[ ] </li>
-</ul>
+<p>2) Install Vim 8.2+ so that fzf works</p>
+<div class="codehilite"><pre><span></span>sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
+</pre></div>
+
+
+<p>3) Install fzf</p>
+<div class="codehilite"><pre><span></span>sudo apt install fzf
+</pre></div>
+
+
+<h2>Step 8: Sync OneDrive</h2>
+<p>1) Download InSync from <a href="https://www.insynchq.com/i/onedrive-linux">website</a> [$$]</p>
+<p>1) Download with rclone by following <a href="https://itsfoss.com/use-onedrive-linux-rclone/">website</a>
+1) Download onedrive using <a href="https://www.linuxuprising.com/2020/02/how-to-keep-onedrive-in-sync-with.html">github project</a></p>
 
     </body>
 </html>

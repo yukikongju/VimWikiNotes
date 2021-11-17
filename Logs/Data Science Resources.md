@@ -13,7 +13,7 @@
 ### Data Mining
 
 - Lecture Notes: [Stanford CS246 - Mining Massive Data Sets](http://web.stanford.edu/class/cs246/index.html#content)
-- Slides:
+- Slides: [CSE 190 - Data Mining and Predictive Analysis](https://cseweb.ucsd.edu//classes/sp15/cse190-c/)
 - Video Lectures:
 - Textbook:
 - Projects:
@@ -29,4 +29,8 @@
 - Projects:
 - Exercices:
 - Exams:
+
+### The Analytic Edge
+
+- Video Lectures and Slides: [MIT 15.071 - The Analytics Edge](https://ocw.mit.edu/courses/sloan-school-of-management/15-071-the-analytics-edge-spring-2017/index.htm)
 

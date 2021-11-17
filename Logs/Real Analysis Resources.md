@@ -13,6 +13,7 @@
 - Exercices (easy): Schaum's Advanced Calculus (proofs for theorems)
 - Exercices (medium): A Problem Book in Real Analysis by Asuman Aksoy (proofs based problem)
 - Exercices (medium): Analyse par Jacques Douchet (calcul based problems)
+- Exercices: [Introductory SIngle Variable Real Analysis - Marcel Finan](https://faculty.atu.edu/mfinan/3203/realbook.pdf)
 - Exams: [MAT1000](https://dms.umontreal.ca/~mat1000/examen/examen.html)
 
 ### Real Analysis 2

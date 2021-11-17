@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-17" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT1227 - Week 3 Lecture 2</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT1227 - Week 3 Lecture 2: Circuits Sequentiel (Latch SR, Verrou D, Bascule D, Registers); Bascule avec signal (Enable, reset); circuits problématiques</h1>
+<h2>Overview</h2>
+<p>Sections:
+1. Circuits Séquentiels: Latch SR, Verrou D, Bascule D, registers
+2. Bascules avec Signal (Enable, reset)
+3. Circuits Problématiques</p>
+<p>Le but de ce cours était de nous introduire aux circuits séquentiels, les cricuits 
+avec mémoire à cours terme.</p>
+<p>Dans un premier temps, on a vu les types de circuits séquentiels. Les nouveaux 
+circuits introduits se servent des circuits définis auparavant ou cherchent à 
+résoudre une problématique. On verra qu'on peut se servir de ces circuits pour 
+implémenter des registres.</p>
+<p>Dans un 2e temps, on veut introduire la notion de bascule</p>
+<p>Finalement, on veut introduire quelques raisons qui peuvent rendre un circuit 
+non fonctionnel.</p>
+<h2>Part 1 - Circuits Séquentiels: Latch SR, Verrou D, Bascule D, registers</h2>
+<p>Il y a 4 éléments à se souvenir:
+- Circuit bistable: 2 portes logiques NON dont l'output est l'input de l'autre
+- Verrou SR (Latch SR): C'est un circuit bistable, mais on remplace les 2 portes 
+  NON par des portes OU parce qu'on n'a pas de moyen de contrôler les états
+- Verrou D (Latch D): La Latch SR possède une faille: il y a un état interdit 
+  [S=1;R=1 produit Q=1 et Q'=1, ce qui est une contradiction]. La latch D est 
+  une amélioration de la Latch SR, car elle enlève cet état interdit. Pour se 
+  faire, on introduit un CLK, qui feed la latch SR
+- Bascule D (Flip-Flop D): la Flip-Flop est le premier circuit qui a une 
+  mémoire. Elle utilise 2 Latch D et sauvegarde la valeur de D au front montant
+  (TO REVIEW)</p>
+<p>À savoir:
+1. Table de vérité
+2. Circuit Interne
+3. Symbole</p>
+<h2>Part 2 - Registres et Bascules avec Signal (Enable, reset)</h2>
+<p>Puisque les Flip-Flops D possède une mémoire à court-terme, on peut les 
+utiliser pour implémenter des registres. Plus généralement, on veut implémenter 
+les bascules D en suivant 2 types de signal:
+- Enable: Enable controle le moment lorsque le flip-flop store la nouvelle valeur
+- Reset: si R=1 =&gt; Q est fixé à 0; si R=0 =&gt; flip-flop normal
+- Set: si S=0 =&gt; Q est fixé à 1; si S=0 =&gt; flip-flop normal</p>
+<h2>Part 3 - Circuits Problématiques (TODO)</h2>
+<p>Le circuit devient problématique lorsque:
+- le signal oscille (à cause des inverseurs)
+- Le circuit à un chemin cyclique</p>
+
+    </body>
+</html>

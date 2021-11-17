@@ -13,12 +13,12 @@
 ### Semaine 3
 
 - [X] [IFT2125 - Week 3 Lecture 1: Retour sur les preuves du problème d'appartenance; Rappel sur les définitions de la notation asymptotique; ordre conditionnel et règle de l'harmonie](IFT2125 - Week 3 Lecture 1)
-- IFT2125 - Week 3 Lecture 2
+- [ ] [IFT2125 - Week 3 Lecture 2: Règle de l'harmonie](IFT2125 - Week 3 Lecture 2)
 
 ### Semaine 4
 
-- IFT2125 - Week 4 Lecture 1
-- IFT2125 - Week 4 Lecture 2
+- [ ] [IFT2125 - Week 4 Lecture 1: Lemme et Théorème sur les fonctions définies par récurence](IFT2125 - Week 4 Lecture 1)
+- [ ] [IFT2125 - Week 4 Lecture 2: Résolution de récurrence linéaire par la méthode de l'équation caractéristique](IFT2125 - Week 4 Lecture 2)
 
 ### Semaine 5
 

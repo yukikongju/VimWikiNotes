@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-23" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT3700 - Week 4 Lecture 1</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT3700 - Week 4 Lecture 1: Données Structurées (types de données, CSV, MNIST et ADULT)</h1>
+<h2>Overview</h2>
+<p>Avant de faire notre analyse en science des données, il faut recueillir de 
+l'information et les storer. Malgré qu'on ne verra pas comment faire la cueillette 
+des données, il faut se souvenir que les dommages créés par une méthodologie 
+mal faite durant la phase de collecte de données à des répercussions beacoup 
+plus importantes que des erreurs dans la phase analyse.</p>
+<ol>
+<li>Types de données</li>
+<li>Modèle CSV</li>
+<li>Dataset: MNIST et ADULT</li>
+</ol>
+<h2>Part 1 - Types de données</h2>
+<p>On distingue 3 types de données:
+- Binaire: Son, vidéo, pdf, image
+- Catégorique: booléens, classes, on-hot encoding
+- Numérique: discrète, continue (quasi continue), ordinale (les classes ont un ordre)</p>
+<p>Remarques:
+- on parle de variables quasi continue, car dans les faits, toutes les variables 
+  sont discrètes, mais il est plus pratique de les traités comme continues
+- Lorsqu'on identifie les variables, on veut connaitre:
+    - type: str, bool, int, float
+    - longeur de l'entrée: nom avec maximum 50 caractères
+    - range: age non-négatif de 0-100
+- Les one-hot encoding sont utilisées pour contrer les bad effects qui peuvent 
+  se produire lorsqu'on encode des données ordinales avec des nombres (vu plus tard)</p>
+<h2>Part 2 - Modèle CSV</h2>
+<p>Le modèle a suivre est le modèle CSV:
+- comma separated</p>
+<h2>Part 3 - Dataset: MNIST et ADULT</h2>
+<p>On a parlé de 2 datasets:
+- MNIST: dataset d'images 28x28
+    * Catégorisation avec booléens: puisque chaque pixel est une variable entre 
+      0-256, on a trop d'information. Ainsi, pour simplifier, on remplace chaque 
+      pixel par une variable binaire (1 si activé; 0 sinon)
+- ADULT: donnée la situation socio-économique de la population
+    * Anonymisation: on parle d'anonymisation lorsqu'on essaie de rendre des 
+      données privées publiques. Naivement, on n'a qu'à enlever le nom de 
+      la personne, mais dans les faits, il est quand même possible d'en 
+      apprendre davantage sur une personne si on a quelques-une de ces infos.</p>
+
+    </body>
+</html>

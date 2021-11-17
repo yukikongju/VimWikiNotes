@@ -14,7 +14,7 @@
 
 ### Abstract Algebra I
 
-- Lecture Notes:
+- Lecture Notes: [UdeM IFT6608 - Intro à l'algèbre Commutative](https://dms.umontreal.ca/~broera/)
 - Slides:
 - Video Lectures: [Abstract Algebra - James Cook](https://www.youtube.com/playlist?list=PLBY4G2o7DhF2pIRNFMW4jIpd_Ek1N3Tt9)
 - Video Lectures: [Abstract Algebra (Fall 2017) - James Cook](https://www.youtube.com/playlist?list=PLBY4G2o7DhF2pIRNFMW4jIpd_Ek1N3Tt9)

@@ -33,6 +33,7 @@
 - IFT3335 - Intelligence Artificielle
 - MAT2115 - Équations Différentielles
 - MAT2412 - Analyse Numérique
+- [STT2700 - Concepts et Méthodes en Statistique](STT2700 - Concepts et Méthodes en Statistique)
 
 ## Session 5
 

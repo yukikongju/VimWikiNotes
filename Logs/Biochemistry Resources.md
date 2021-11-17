@@ -17,7 +17,7 @@
 
  Concepts VISUAL
 
-- Lecture Notes: [MIT 7.05 - General Biochemistry](https://ocw.mit.edu/courses/biology/7-05-general-biochemistry-spring-2020/index.htm)
+- Video Lectures and Lecture Notes: [MIT 7.05 - General Biochemistry](https://ocw.mit.edu/courses/biology/7-05-general-biochemistry-spring-2020/index.htm)
 - Slides:
 - Video Lectures: [MIT 7.05 - General Biochemistry](https://www.youtube.com/playlist?list=PLUl4u3cNGP62wNcIMfinU64CAfreShjpt)
 - Textbook:

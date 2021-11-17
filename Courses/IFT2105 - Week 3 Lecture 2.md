@@ -75,3 +75,18 @@ Sections:
    par le lambda-calcul
 5. Arithmétique sur les entiers de Church
 
+IL y a 3 concepts à se souvenir:
+- le lambda calcul utilise la notion de mathématiques combinatoires pour définir 
+  des fonctions dont les paramètres sont passés en querry (une à la suite de 
+  l'autre, pas tout d'un coup)
+- beta-reduction: Lorsqu'on évalue les fonctions, on dit qu'on fait une beta réduction. 
+  Lorsque la fonction n'est plus réductible, on dit que la fonction est dans sa 
+  forme normale
+- pour évaluer une fonction lambda, on doit substituer ce qu'il vient après 
+  dans le premier paramètre
+
+Ressource:
+- [Fundamentals of Lambda Calculus & Functional Programming in JS](https://www.youtube.com/watch?v=3VQ382QG-y4)
+- [Church Encoding by Gabriel Lebec](https://www.youtube.com/watch?v=pAnLQ9jwN-E)
+- [Github Repo for Lambda Talk](https://github.com/glebec/lambda-talk)
+

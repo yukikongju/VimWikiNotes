@@ -2,6 +2,14 @@
 
 ## Devoir
 
+- [O] Devoir 1 - IFT1575
+- [O] Devoir 1 - IFT2125
+- [ ] Devoir 1 - IFT2105
+- [O] Devoir 1 - IFT1227
+
 ## Correction
 
-- [ ] Faire le corrige du devoir 1 IFT1215
+- [X] Faire le corrige du devoir 1 IFT1215
+
+
+

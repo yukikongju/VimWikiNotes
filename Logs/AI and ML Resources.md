@@ -25,6 +25,7 @@
 ### Machine Learning
 
 - Lecture Notes: [CMU 10-301 - Introduction to ML](http://www.cs.cmu.edu/~mgormley/courses/10601-s20/schedule.html)
+- Slides: [McGill's COMP-652: Machine Learning](https://www.cs.mcgill.ca/~dprecup/courses/ML/)
 - OneNote: [CMU 10-301 OneNote](https://onedrive.live.com/redir?resid=2A78C342EA463DA9%21881&authkey=%21ABXJKwZXCIDAwjo&page=View&wd=target%28Lecture%203A.one%7C66F3F84A-A3B3-054F-91A7-C12AD32AB487%2FDecision%20Trees%20%28Part%20II%5C%29%7Cf9e0ac85-8fc3-4203-9183-65400d19d772%2F%29)
 - Slides:
 - Video Lectures: [CMU 10-301 - Introduction to ML](https://www.youtube.com/playlist?list=PLpqQKYIU-snAPM89YPPwyQ9xdaiAdoouk)
@@ -81,12 +82,17 @@
 
 - Lecture Notes: [Reinforcement Learning - David Silver](https://deepmind.com/learning-resources/-introduction-reinforcement-learning-david-silver)
 - Website: [Stanford CS 234 - Reinforcement Learning](https://web.stanford.edu/class/cs234/#course_schedule)
-- Slides:
+- Slides: [McGill's Precup Reinforcement Learning](https://www.cs.mcgill.ca/~dprecup/courses/Winter2017/RL/)
 - Video Lectures: [Reinforcement Learning - David Silver](https://www.youtube.com/playlist?list=PLqYmG7hTraZBiG_XpjnPrSNw-1XQaM_gB)
 - Textbook:
 - Projects:
 - Exercices:
 - Exams:
+
+### Introduction to Neural Computation (TODO)
+
+- Video Lectures and Slides: [MIT 9.40 - Introduction to Neural Computation](https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-40-introduction-to-neural-computation-spring-2018/)
+
 
 ### Game Theory for Machine Learning
 

@@ -8,16 +8,16 @@
 ### Semaine 2
 
 - IFT1575 - Week 2 Lecture 1: Introduction 
-- [IFT1575 - Week 2 Lecture 2: Modelisation en Programmation Lineaire](IFT1575 - Week 2 Lecture 1)
+- [X] [IFT1575 - Week 2 Lecture 2: Modelisation en Programmation Lineaire](IFT1575 - Week 2 Lecture 1)
 
 ### Semaine 3
 
-- IFT1575 - Week 3 Lecture 1: Modelisation (suite)
-- [IFT1575 - Week 3 Lecture 2: Algorithme du simplexe - Methode Algebrique et Methode Tableau (incomplet)](IFT1575 - Week 3 Lecture 1)
+- [X] IFT1575 - Week 3 Lecture 1: Modelisation (suite)
+- [X] [IFT1575 - Week 3 Lecture 2: Algorithme du simplexe - Methode Algebrique et Methode Tableau](IFT1575 - Week 3 Lecture 1)
 
 ### Semaine 4
 
-- IFT1575 - Week 4 Lecture 1
+- [X] [IFT1575 - Week 4 Lecture 1](IFT1575 - Week 4 Lecture 1)
 - IFT1575 - Week 4 Lecture 2
 
 ### Semaine 5

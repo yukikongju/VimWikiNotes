@@ -10,7 +10,7 @@ qu'il n'est pas possible de calculer les fonctions Ackermann avec les programmes
 Répéter, qui motivera les programmes tant que, qui eux, peuvent calculer les
 fonctions Ackermann, car ils permettent des boucles infinies.
 
-Sections:
+Part 1 - Les programmes répéter et tant que:
 1. Qu'est-ce qu'un programme Répéter (règles, structure récursive, sucre syntaxique)
 2. Quelles fonctions sont supportées par les programmes répéter  
 3. Montrer que les programmes répéter ne peuvent pas calculer les fonctions Ackermann  

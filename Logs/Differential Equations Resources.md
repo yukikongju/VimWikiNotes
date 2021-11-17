@@ -10,6 +10,7 @@
 - Textbook:
 - Projects:
 - Exercices (easy): Schaum's Differential Equations
+- Exercices: [MIT 18.03 - Differential Equations](https://ocw.mit.edu/courses/mathematics/18-03-differential-equations-spring-2010/recitations/)
 - Exams:
 
 ### Partial Differential Equations
@@ -22,5 +23,5 @@
 - Video Series: [PDEs - commutant](https://www.youtube.com/playlist?list=PLF6061160B55B0203)
 - Textbook:
 - Projects:
-- Exercices:
+- Exercices: [MATH 4242 - Partial Differential Equations I by Marcel Finan](https://faculty.atu.edu/mfinan/4343/ann.html)
 - Exams:

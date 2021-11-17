@@ -1,13 +1,16 @@
 # Discrete Maths Resources
 
+- [Marcel Finan Courses Notes](https://faculty.atu.edu/mfinan/classes.html)
+
+
 ### Discrete Maths
 
 - Lecture Notes:
-- Slides:
+- Slides: [Udem IFT1500 - Mathematiques Discretes](https://dms.umontreal.ca/~broera/)
 - Video Lectures:
 - Textbook:
 - Projects:
-- Exercices:
+- Exercices: [Udem IFT1500 - Mathematiques Discretes](https://dms.umontreal.ca/~broera/)
 - Exams:
 
 ### Number Theory

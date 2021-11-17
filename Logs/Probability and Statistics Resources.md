@@ -10,6 +10,10 @@
 - Exercices:
 - Exams:
 
+### Statistics II
+
+- Video Lectures and Slides: [MIT 18.650 - Statistics for Applications](https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/index.htm)
+
 ### Probability
 
 - Lecture Notes: [MIT Jeremy Orloff's Introduction to Probability and Statistics](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/index.htm)

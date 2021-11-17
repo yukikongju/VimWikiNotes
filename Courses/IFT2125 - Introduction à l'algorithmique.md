@@ -4,14 +4,13 @@
 
 Liste des chapitres:
 1. Appartenance Permutations
-2. Ordre Conditionnel et règle harmonique
+2. Ordre et Récurrence
 3. Algorithmes Voraces: Huffman, Matroids
 4. Diviser pour régner: Fast Fourier
 5. Programmation Dynamique
 6. Exploration de Graphes
 7. Algorithmes de Monte Carlo
 8. Algorithmes Parallèles
-
 
 ## Résumé par séance
 
@@ -24,6 +23,11 @@ Liste des chapitres:
 ## Révision par chapitres
 
 - [IFT2125 - Chapter Revision](IFT2125 - Chapter Revision)
+
+## Révision par TP
+
+- [IFT2125 - TP Revision](IFT2125 - TP Revision)
+
 
 ## Liste de Concepts
 
@@ -41,3 +45,6 @@ Liste des chapitres:
 ## Final Thoughts
 
 ## Ressources
+
+- [UdeM IFT2125 H2014](http://www.iro.umontreal.ca/~pift2125/Current/devoirs.html)
+

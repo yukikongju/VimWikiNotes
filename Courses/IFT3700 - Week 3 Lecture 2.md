@@ -1,4 +1,4 @@
-# IFT3700 - Week 3 Lecture 2
+# IFT3700 - Week 3 Lecture 2: Modélisation; Biais Cognitifs; Specificité, Sensibilité et ROC 
 
 ## Overview
 
@@ -19,6 +19,24 @@ Notons que:
 - Erreur de la modélisation: interpolation vs extrapolation -> il est correct d'intrapoler à l'intérieur des observations recueillis. Par contre, on ne peut pas extrapoler, car les données peuvent se comporter différement
 
 ### Évaluation du modèle: Spécificité, Sensibilité et ROC (TODO)
+
+Pour évaluer le modèle, on peut utiliser 2 types de métriques:
+- Sensibilité: Identify people with the disease (true positives)
+- Spécificité:  Accurately identify people without the disease (true negatives)
+
+Parfois, il existe une dichotomie entre la spécificité et la sensibilité. Tout 
+dépendemment du problème, on préférera en prioriser un plutôt que l'autre. 
+
+Par exemple, en médecine, on préfère avoir des faux positifs plutôt que de faux 
+ngatifs. Ainsi, on voudra privilégier une plus forte sensibilité plutôt que 
+spécificité.
+
+Pour mesurer la "balance" entre la spécificité et la sensibilité, on utilise 
+le modèle ROC
+
+Ressources:
+- [StatQuest ROC and AUC](https://www.youtube.com/watch?v=4jRBRDbJemM)
+- [StatQuest - Confusion Matrix](https://www.youtube.com/watch?v=Kdsp6soqA7o)
 
 ### Lois de distributions de Rayleigh (TODO)
 

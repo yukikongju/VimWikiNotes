@@ -1,7 +1,7 @@
 ## IFT1575 - TP Summary
 
-- [IFT1575 - TP 1: Modélisation](IFT1575 - TP 1)
-- IFT1575 - TP 2
+- [X] [IFT1575 - TP 1: Modélisation de Problèmes en Programmation Linéaire](IFT1575 - TP 1)
+- [ ] [IFT1575 - TP 2: Algorithme du simplexe (méthode algébrique, tableau, graphique)](IFT1575 - TP 2)
 - IFT1575 - TP 3
 - IFT1575 - TP 4
 - IFT1575 - TP 5

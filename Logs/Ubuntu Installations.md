@@ -49,7 +49,7 @@ If error, see `` :CocInfo `` to debug
 
 1) Install pdflatex Compiler
 
-`` sudo apt install texlive-latex-base latexmk evince ``
+`` sudo apt install texlive-latex-base latexmk evince pandoc ``
 
 2) Install Extra latex packages
 
@@ -61,7 +61,7 @@ If error, see `` :CocInfo `` to debug
 
 ## Step 6: Install Vimwiki
 
-1) Install :VimWiki2HTML
+1) Install :VimWiki2HTML [Works inside tmux, but not in terminal]
 
 `` pip install vimwiki-markdown``
 
@@ -69,13 +69,31 @@ If error, see `` :CocInfo `` to debug
 
 `` sudo apt-get install ruby-full``
 
-## Step 7: Install fuzzy finder
+## Step 7: Install fuzzy finder 
+
+1) Install Code Searcher
 
 `` sudo install ripgrep the-silver-searcher ``
 
+2) Install Vim 8.2+ so that fzf works
 
-### TODOs
+```
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
+```
 
-- [ ] Vimwiki2HTML doesn't work
-- [ ] 
+
+3) Install fzf
+
+```
+sudo apt install fzf
+```
+
+## Step 8: Sync OneDrive
+
+1) Download InSync from [website](https://www.insynchq.com/i/onedrive-linux) [$$]
+
+1) Download with rclone by following [website](https://itsfoss.com/use-onedrive-linux-rclone/)
+1) Download onedrive using [github project](https://www.linuxuprising.com/2020/02/how-to-keep-onedrive-in-sync-with.html)
 

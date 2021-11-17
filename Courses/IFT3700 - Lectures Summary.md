@@ -13,12 +13,12 @@
 ### Semaine 3
 
 - [X] [IFT3700 - Week 3 Lecture 1: Puissance des données et méthode Scientifique](IFT3700 - Week 3 Lecture 1)
-- [ ] [IFT3700 - Week 3 Lecture 2: Modélisation et Biais Congnitifs](IFT3700 - Week 3 Lecture 2)
+- [X] [IFT3700 - Week 3 Lecture 2: Modélisation; Biais Cognitifs; Specificité, Sensibilité et ROC](IFT3700 - Week 3 Lecture 2)
 
 ### Semaine 4
 
-- IFT3700 - Week 4 Lecture 1
-- IFT3700 - Week 4 Lecture 2
+- [X] [IFT3700 - Week 4 Lecture 1: Données Structurées (types de données, CSV, MNIST et ADULT)](IFT3700 - Week 4 Lecture 1)
+- [X] [IFT3700 - Week 4 Lecture 2: Formattage des données et puzzle sur les probabilité et statistiques](IFT3700 - Week 4 Lecture 2)
 
 ### Semaine 5
 

@@ -12,6 +12,9 @@
 - Network and Communications Resources
 - [Distributed Systems Resources](Distributed Systems Resources)
 
+- [Theory of Computation Ressources](Theory of Computation Ressources)
+- [Operational Research Ressources](Operational Research Ressources)
+
 ### Specialization
 
 - [Computer Graphics Resources](Computer Graphics Resources)
@@ -32,6 +35,11 @@
 - [Cryptocurrency Resources](Cryptocurrency Resources)
 - [Web Development Resources](Web Development Resources)
 
+### MIT
+
+- [MIT CS Curriculum](MIT CS Curriculum)
+
+
 ### Ressources
 
 - [ACM Computing Curricula](https://www.acm.org/binaries/content/assets/education/curricula-recommendations/cc2020.pdf)
@@ -42,3 +50,17 @@
 - [ACM Information Systems](https://www.acm.org/binaries/content/assets/education/curricula-recommendations/is2020.pdf)
 - [ACM Information Technology](https://www.acm.org/binaries/content/assets/education/curricula-recommendations/it2017.pdf)
 - [ACM Software Engineering](https://www.acm.org/binaries/content/assets/education/se2014.pdf)
+
+- [Marc Moreno Maza Courses](https://www.csd.uwo.ca/~mmorenom/teaching.html)
+- [Peter Habermehl Courses](https://www.irif.fr/~haberm//teaching.html)
+- [Richard Peng Courses](https://www.cc.gatech.edu/~rpeng/teaching.html)
+- [Kevin Wayne Courses](https://www.cs.princeton.edu/~wayne/teaching/)
+- [Lutz Hamel Courses](https://homepage.cs.uri.edu/faculty/hamel/)
+- [Ashutosh Trivedi Courses](https://ashut.bitbucket.io/teaching.html)
+- [Venkatesan Guruswani Courses](http://www.cs.cmu.edu/~venkatg/#teaching)
+- [Anupam Gupta Courses](http://www.cs.cmu.edu/~anupamg/)
+- [Gragory Quenell Courses](https://www.mtholyoke.edu/courses/quenell/)
+- [Virgil Bistriceneanu Courses](http://www.cs.iit.edu/~virgil/)
+
+
+

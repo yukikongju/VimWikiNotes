@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-23" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT1227 - Week 4 Lecture 1</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT1227 - Week 4 Lecture 1: Finite State Machines pour definir des circuits sequentiels (représentation de Melay et de Moore)</h1>
+<h2>Overview</h2>
+<p>Le but du cours était de voir comment représenter des finites states machines 
+pour définir des circuits séquentiels. Pour se faire, on veut écrire 
+un graphe de transitions. Il existe 2 types:
+- Représentation de Melay: on envoie l'entrée et la sortie à l'autre état
+- Représentation de Moore: on envoie seulement l'entrée, la sortie est 
+  sauvegardée à l'intérieur de l'état</p>
+<h2>Qu'est-ce qu'un automate fini</h2>
+<p>Un automate fini est caractérisé par un nombre d'états fini (t, t+1)</p>
+<h2>Quelles étapes doit-on suivre pour tracer notre circuit séquentiel à partir d'un graphe de transition</h2>
+<p>Pour ce faire, on doit suivre les étapes suivantes:
+1. Boite noire: on prend quelques exemples et on essait de voir leurs behaviors
+2. Tracer le graphe de transitions en utilisant la représentation de Melay ou de Moore
+3. Tracer la table de transitions donnée par:
+    * l'état courrant
+    * l'entrée
+    * l'état futur
+    * la sortie
+4. Tracer la table de vérité
+5. Écrire les fonctions canoniques données par la table de vérité
+6. Tracer le circuits séquentiels avec un encodeur et une horloge (on utilise 
+    SOP et une porte ou pour connecter les minterms)</p>
+<p>Objectifs:
+    - Être capable de traduire un graphe de transitions en tableau de transitions 
+      en table de vérité et vice-versa</p>
+<p>Exemples:
+    * Lecteur binaire: lire une chaine binaire et output 1 lorsqu'on voit le substring
+    * Intersection Rue avec priorité</p>
+<h2>Quelles sont les différences entre la représentation de Melay et la représentation de Moore?</h2>
+<h2>Quels sont les avantages et désavantages entre la représentaion de Melay et celle de Moore</h2>
+<p>Représentation de Melay:
+    * Avantage: Moins d'états que Moore<br />
+    * Inconvénient: Instabilité temporelle</p>
+<p>Représentation de Moore:
+    * Avantage: Plus de stabilité temporelle
+    * Inconvénient: plus d'états à représenter que Melay</p>
+
+    </body>
+</html>

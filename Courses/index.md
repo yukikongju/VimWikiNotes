@@ -5,6 +5,10 @@
 - [UdeM](UdeM)
 - Self Taught Courses
 
+## Research Papers
+
+
+
 ### Webinars
 
 - [Webinars Notes](Webinars Notes)
@@ -18,3 +22,5 @@
 - Vim Plugins and Installations
 
 ### Books
+
+- [Lecture Notes](Lecture Notes)

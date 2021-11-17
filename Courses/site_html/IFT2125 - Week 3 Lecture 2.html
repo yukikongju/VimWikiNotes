@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-19" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT2125 - Week 3 Lecture 2</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT2125 - Week 3 Lecture 2</h1>
+<h2>Overview [J'ai manqué la deuxième partie du cours]</h2>
+<p>Sections:
+1. Exemple de la règle de l'harmonie
+2. Preuve de la Règle de l'harmonie
+3. Opérations sur les Ordres
+4. Master Theorem</p>
+<h2>Part 1 - Exemple de la règle de l'harmonie</h2>
+<p>La règle de l'harmonie nous permet d'enlever la condition après la la condition 
+d'ordre si la fonction est:
+- évantuellement non-décroissante: t(n) &lt;= t(n+1)
+- Smooth: f(bn) &lt;= O(f(n))</p>
+<p>Ex: t(n) = 4*t((ceiling(n/2))) + 6n</p>
+<p>On veut montrer que pour n=2^k (une puissance de 2), alors on peut appliquer le 
+smoothness rule</p>
+<p>Étapes:
+1. Trouver la fonction t(2^k) par récurrence
+2. Montrer que t(n) \elem \Theta (n^2 | n est une puissance de 2) en montrant que: (utiliser la récurrence t(2^k))
+    1. t(n) \elem O(n^2 | n est une puissance de 2) :
+    2. t(n) \elem \Omega(n^2 | n est une puissance de 2) :
+3. Enlever la condition en vérifiant le smoothness rule:
+    1. Montrer que t(n) est éventuellement non-décroissant par récurrence: t(n) &lt;= t(n+1)
+    2. Montrer que t(n) est smooth: t(bn) &lt;= O(t(n)) [TO REVIEW]</p>
+<h2>Part 2 - Preuve de la Règle de l'harmonie</h2>
+<p>La règle de l'harmonie nous dit que, sachant l'ordre conditionnelle d'une fonction t(n), 
+on peut enlever la condition si:
+- t(n) est éventuellement non-décroissante
+- t(n) est smooth: t(bn) \elem O(t(n))</p>
+<p>Pour se faire, on veut montrer que si t(n) répond à ces 2 critères, alors 
+t(n) \elem \Theta (f(n)) =&gt; t(n) &lt;= c f(n)</p>
+<p>De plus, puisque le diviseur est une puissance de b, on sait que $n=b^{floor(log_b n)}$</p>
+<p>L'argument: on utilise le fait que t(n) est O(f(n)) pour borner et trouver que 
+$t(n) &lt;= ac f(n)$</p>
+<h2>Part 3 - Opérations sur les Ordres (TO REVIEW)</h2>
+<p>L'addition et multiplication des Big O (ou autres), nous dit que le Big O des 2 fonctions 
+est la somme de 2 fonctions quelconques à l'intérieur de cette famille:
+$O(f) +O(g)=h(n)$, ou h(n)=h_1(n) +h_2(n)</p>
+<h2>Part 4 - Master Theorem</h2>
+<h3>Motivation derrière le master theorem</h3>
+<p>Lorsqu'on essait d'évaluer l'ordre de fonctions récursive, il est nécessaire 
+d'énumérer toutes les occurences. On veut utiliser le master theorem afin 
+d'éviter d'énumérer toutes les récurrences</p>
+<h3>Rappel: comment évaluer l'ordre d'une fonction récursive (TODO)</h3>
+<h3>Le Master Theorem</h3>
+<p>Le Master Theorem nous dit que si T(n)=aT(n/b)+f(n^d), on doit considérer 
+d=log_b a pour déterminer l'ordre de T(n):
+- Cas 1: si d&gt; log_b a, alors T(n) =O(n^d)
+- Cas 2: si d = log_b a, alors T(n) O(n^d log n)
+- Cas 3: si d&lt;log_b a, alors T(n) = O(n^{log_b a})</p>
+<p>Ressources:
+- <a href="https://www.youtube.com/watch?v=2H0GKdrIowU&amp;t=196s">what is the master theorem (5 min)</a>
+- <a href="https://www.youtube.com/watch?v=zbf0llo3-YI">The Master Method (hard)</a>
+- <a href="https://www.cs.mcgill.ca/~dprecup/courses/IntroCS/Lectures/comp250-lecture16.pdf">Recursive Proof for Merge Sort</a></p>
+
+    </body>
+</html>

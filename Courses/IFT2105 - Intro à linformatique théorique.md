@@ -23,6 +23,7 @@ Liste des chapitres:
 ## Résumé par séance
 
 - [IFT2105 - Lectures Summary](IFT2105 - Lectures Summary)
+- IFT2105 - Contenu des Cours
 
 ## Résumé des TPs
 
@@ -31,6 +32,11 @@ Liste des chapitres:
 ## Révision par chapitres
 
 - [IFT2105 - Chapter Revision](IFT2105 - Chapter Revision)
+
+## Révision par TPs
+
+- [IFT2105 - TP Revision](IFT2105 - TP Revision)
+
 
 ## Liste de Concepts
 
@@ -43,4 +49,5 @@ Liste des chapitres:
 ## Ressources
 
 - Book: [Introduction to the Theory of computation - Michael Sipser]
+- Slides: [IFT2105 - Ete 2017](http://www.iro.umontreal.ca/~pift2105/Current/notes.html)
 - Slides: [IFT6370 - Informatique Théorique Avancée par Alain Tapp](https://sites.google.com/view/alain-tapp-mila/enseignement/informatique-th%C3%A9orique)

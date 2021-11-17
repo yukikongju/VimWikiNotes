@@ -12,7 +12,7 @@
     </head>
     <body>
 
-<h1>IFT3700 - Week 3 Lecture 2</h1>
+<h1>IFT3700 - Week 3 Lecture 2: Modélisation; Biais Cognitifs; Specificité, Sensibilité et ROC</h1>
 <h2>Overview</h2>
 <p>Sections: 
 1. Modélisation<br />
@@ -27,6 +27,19 @@ modèle qui va pouvoir prédire le futur.</p>
 - On se fie sur des peers reviews. Par contre, cela fait en sorte qu'on peut parfois manquer les cas extrêmes qu'on juge impossible. (ex: vagues ; gagner 72 fois à la roulette)
 - Erreur de la modélisation: interpolation vs extrapolation -&gt; il est correct d'intrapoler à l'intérieur des observations recueillis. Par contre, on ne peut pas extrapoler, car les données peuvent se comporter différement</p>
 <h3>Évaluation du modèle: Spécificité, Sensibilité et ROC (TODO)</h3>
+<p>Pour évaluer le modèle, on peut utiliser 2 types de métriques:
+- Sensibilité: Identify people with the disease (true positives)
+- Spécificité:  Accurately identify people without the disease (true negatives)</p>
+<p>Parfois, il existe une dichotomie entre la spécificité et la sensibilité. Tout 
+dépendemment du problème, on préférera en prioriser un plutôt que l'autre. </p>
+<p>Par exemple, en médecine, on préfère avoir des faux positifs plutôt que de faux 
+ngatifs. Ainsi, on voudra privilégier une plus forte sensibilité plutôt que 
+spécificité.</p>
+<p>Pour mesurer la "balance" entre la spécificité et la sensibilité, on utilise 
+le modèle ROC</p>
+<p>Ressources:
+- <a href="https://www.youtube.com/watch?v=4jRBRDbJemM">StatQuest ROC and AUC</a>
+- <a href="https://www.youtube.com/watch?v=Kdsp6soqA7o">StatQuest - Confusion Matrix</a></p>
 <h3>Lois de distributions de Rayleigh (TODO)</h3>
 <h2>Part 2 - Biais Congnifs</h2>
 <ul>

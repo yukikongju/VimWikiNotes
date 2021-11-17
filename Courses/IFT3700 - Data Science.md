@@ -16,9 +16,13 @@ Liste des chapitres:
 
 - [IFT3700 - Chapter Revision](IFT3700 - Chapter Revision)
 
+## Révision par TP
+
+- [IFT3700 - TP Revision](IFT3700 - TP Revision)
+
 ## Liste de Concepts
 
-- IFT3700 - Concepts List
+- [IFT3700 - Concepts List](IFT3700 - Concepts List)
 
 ## Questions
 

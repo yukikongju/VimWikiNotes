@@ -19,6 +19,7 @@
 - [Financial Mathematics Resources](Financial Mathematics Resources)
 - [Game Theory Resources](Game Theory Resources)
 - [Actuarial Science Resources](Actuarial Science Resources)
+- [Numerical Method Ressources](Numerical Method Ressources)
 
 ## Grad Classes
 
@@ -31,3 +32,15 @@
 
 - History of Maths
 - [Famous Maths Problems Resources](Famous Maths Problems Resources)
+
+
+# Ressources
+
+- [Marcel Finan Courses](https://faculty.atu.edu/mfinan/classes.html)
+- [Marcel Finan Notes](https://faculty.atu.edu/mfinan/nnotes.html)
+- [Gantumur McGill Courses](https://www.math.mcgill.ca/gantumur/teaching.html)
+- [Weistrass Institute Courses](https://www.wias-berlin.de/people/john/LEHRE/lehrealt.html)
+- [James Cook Courses](http://www.supermath.info/index.html)
+- [John K Hunter Courses](https://www.math.ucdavis.edu/~hunter/teaching.html)
+- [List of Video Ressources for Probability and Stats](http://web2.uwindsor.ca/math/hlynka/statcourses.html)
+

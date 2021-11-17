@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <meta name="date" content="2021-09-17" scheme="YYYY-MM-DD">
+        <meta name="date" content="2021-09-23" scheme="YYYY-MM-DD">
         <meta name="viewport" content="width=device-width" />
         <title>IFT1575 - TP 1</title>
         <link rel="stylesheet" href="style.css" type="text/css"
@@ -28,10 +28,25 @@ linéaires</p>
 - Dans la plupart des cas, on préfère considérer x_{ij} avec:<br />
   - i: type de marchandise
   - j: compartiment</p>
-<h2>Problème 1 -</h2>
-<h2>Problème 2 -</h2>
-<h2>Problème 3 -</h2>
-<h2>Problème 4 -</h2>
+<h2>Problème 1 - Minimiser les couts de production, entretien et transport avec offre/demande</h2>
+<p>Dans un problème lorsqu'on peut commander plus de matériels avec un cout extra, 
+si la demande est plus importante que l'offre, on peut simplifier le problème 
+en assumant que les matériaux de base vont etre achetés. </p>
+<p>En d'autres mots, on ne fait qu'optimiser sur les données qui peuvent être 
+optimisée.</p>
+<h2>Problème 2 - Problème de Coupe forestier (à revoir)</h2>
+<h2>Problème 3 - Maximiser les revenus pour le transport de marchandise avec même pourcentage de poids minimal</h2>
+<p>Lorsqu'ils nous demandent de balancer le poids entre plusieurs compartiments, 
+on veut que la proportion soit la même. Intuitivement, </p>
+<p>proportion compartiment 1 = prop compartiment 2 = prop compartiment 3</p>
+<p>Mathématiquement, on veut que la somme des paires donne 0:
+* prop compartiment 1 - prop compartiment 2 = 0
+* prop compartiment 1 - prop compartiment 3 = 0</p>
+<h2>Problème 4 - Maximiser les profits dans une usine de production et déterminer la contrainte redondante</h2>
+<p>Pour montrer qu'une contrainte est redondante, on n'a qu'à la borner par deux 
+autres contraintes du problème</p>
+<p>Question: Comment faire pour identifier rapidement qu'il y a une contrainte 
+redondante</p>
 
     </body>
 </html>

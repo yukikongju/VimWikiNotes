@@ -9,6 +9,7 @@
 - [Chemistry Curriculum](Chemistry Curriculum)
 - [Economics Curriculum](Economics Curriculum)
 - [Medicine and Pharmacology Curriculum](Medicine and Pharmacology Curriculum)
+- [Psychology Curriculum ](Psychology Curriculum )
 
 ## Webinars
 
@@ -17,7 +18,8 @@
 ## Academia
 
 - [Dev Blogs List](Dev Blogs List)
-- CS Papers List
+- [CS Papers List](CS Papers List)
+- [University Courses Ressources](University Courses Ressources)
 
 ## Dev Technologies
 
@@ -26,6 +28,7 @@
 ## Projects
 
 - [Project Ideas](Project Ideas)
+- [CS Articles Ideas](CS Articles Ideas)
 
 ## Thesis
 
@@ -33,6 +36,7 @@
 
 ## Books and Films
 
+- [CS Documentation List](CS Documentation List)
 - Books List
 - Filmography List
 
@@ -44,4 +48,5 @@
 
 - [Bourses Udem](Bourses Udem)
 - [Connection SSH - Arcade IRO UdeM](Connection SSH - Arcade IRO UdeM)
+- [List of Probability and Statistics Video Ressources]()
 

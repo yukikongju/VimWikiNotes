@@ -5,7 +5,7 @@
 ``Concepts: Basic DS (bag, queue, stack),  heap, binary search tree, self-balancing BST (AVL Tree, red-black tree, B-Trees), hashmap ``
 
 - Lecture Notes: [Stanford CS166 - Data Structures](http://web.stanford.edu/class/cs166/)
-- Slides:
+- Slides: [McGill's Precup Intro to CS](https://www.cs.mcgill.ca/~dprecup/courses/IntroCS/)
 - Video Series: [Data Structure by William Fiset](https://www.youtube.com/playlist?list=PLDV1Zeh2NRsB6SWUrDFW2RmDotAfPbeHu)
 - Video Lectures part 1: [Princeton - Algorithms I](https://www.coursera.org/learn/algorithms-part1)
 - Video Lectures part 2: [Princeton - Algorithms II](https://www.coursera.org/learn/algorithms-part2)
@@ -26,8 +26,11 @@
 
 ### Algorithms
 
+- Slides: [CS 161 - Algorithms Stanford](http://web.stanford.edu/class/cs161/lectures.html)
 - Lecture Notes: [UC Berkley CS170 - Efficient Algorithms and Intractable Problems](https://inst.eecs.berkeley.edu/~cs170/fa20/)
 - Video Lectures: [CSE373 - Analysis of Algorithms by Steven Skiena](https://www.youtube.com/playlist?list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx)
+- Video Lectures and Lecture Notes: [MIT 6.006 - Introduction to Algorithms](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-spring-2020/index.htm)
+- Video Lectures: [CS341 - Algorithms Waterloo](https://student.cs.uwaterloo.ca/~cs341/)
 - Textbook:
 - Projects:
 - Exercices:
@@ -92,4 +95,9 @@
 - Projects:
 - Exercices:
 - Exams:
+
+### Graph Theory and Additive Acombinatorics
+
+- Video Lectures and Slides: [MIT 18.217 - Graph Theory and Additive Combinatorics](https://ocw.mit.edu/courses/mathematics/18-217-graph-theory-and-additive-combinatorics-fall-2019/)
+
 

@@ -1,6 +1,6 @@
 # IFT2105 - Concepts List
 
-- Chapter 1: Introduction
+## - Chapter 1: Introduction
     - Techniques de preuves
 	* Preuve par contradiction
 	* Preuve par induction / récurrence généralisée
@@ -11,7 +11,7 @@
     - Notation Asymptotiques
 	* Big O, Big Omega, Big Theta
 
-- Chapter 2: Modèles Calculatoires
+## - Chapter 2: Modèles Calculatoires
     - Programmes Répéter et Tant Que
 	* Qu'est-ce qu'un programme répéter (instructions valides; fonctions arithmétiques; bitwise; nombre premiers)
 	* Encodage de Godel: Utiliser un nombre pour représenter un tableau (utilise nombre premier et théorème fondamental de l'arithmétique)
@@ -26,8 +26,16 @@
 	* Théorème Church-Rosses: l'ordre dans lequel les bétas opérations sont exécutés ne change pas le résultat
 	* Encodage de Church: Construire des nombres entiers avec le lambda-calcul
 	* Arithmétique avec encodage de Church: Comment représenter incrémentation, addition, multiplication, exponentiation avec encodage de Church
+	* Représentation Booléens et opérateurs logiques (NON, ET, OU) en lambda-calcul
+	* Représentation tuples et tableau (KElemN)
+	* Opérations sur l'encodage (suite): décrémentation, moins, egale à zéro, 
+	  plus grand ou égal
+	* Théorème de Church-Turing: les machines de Turing et le lambda-calcul 
+	  équivalents
+	    * MT génèrent lambda-calcul: on peut générer les fonctions
+	    * lambda-calcul génère les MT: définir le ruban des MT avec SAS
     - Circuits Booleans
 
 
-- Chapter 3:
+## - Chapter 3:
 

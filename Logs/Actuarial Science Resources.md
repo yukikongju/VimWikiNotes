@@ -1,5 +1,8 @@
 # Actuarial Science Resources
 
+Exams: [Study Material and Old Exams](https://www.soa.org/education/exam-req/syllabus-study-materials/edu-multiple-choice-exam)
+
+
 ## Introduction to Financial Mathematics
 
 - Lecture Notes: [MIT 18.S096 - Lecture Notes](https://ocw.mit.edu/courses/mathematics/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/lecture-notes/)
@@ -33,3 +36,8 @@
 - Projects:
 - Exercices:
 - Exams:
+
+## Ressources 
+
+- [Bruce Dieffenbach Courses](https://www.albany.edu/~bd445/)
+

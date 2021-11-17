@@ -87,4 +87,3 @@ Les etapes:
 
 ## Quelles sont les différences entre la méthode algébrique et la méthode du tableau (TODO)
 
-

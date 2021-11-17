@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2021-09-23" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>IFT2105 - Week 4 Lecture 1</title>
+        <link rel="stylesheet" href="style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="pygmentize.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+
+<h1>IFT2105 - Week 4 Lecture 1</h1>
+<h2>Overview</h2>
+<p>This lecture focussed on the operations we can perform on numbers encoded 
+with Church encoding. Last lecture, we saw how to perform incrementation, 
+addition, multiplication and exponentiation. In this lecture, we will focus on 
+decrementation. However, to perform this operation, we need to define booleans 
+and table.</p>
+<p>Il faut se souvenir qu'on définit d'abord les opérations qu'on performe, puis ensuite, 
+on performe des bétas réductions</p>
+<h2>Part 1 - Rappel: Church Encoding et opérations de base: incr, add, mult, exp (TO REVIEW)</h2>
+<p>Church Encoding: f |-&gt; f^<n></p>
+<h2>Part 2 - Operations on Church Encoding: booleans and logical Operations</h2>
+<p>On définit d'abord la fonction, puis on peut construire la "table de vérité" en faisant 
+chacun des cas</p>
+<ul>
+<li>Booleans:<ul>
+<li>TRUE:= $\lambda xy.x$</li>
+<li>FALSE:= $\lambda xy.y$</li>
+</ul>
+</li>
+<li>Logical Operations:<ul>
+<li>NOT:= $\lambda p.p FAUX VRAI$</li>
+<li>ET:= $\lambda pq.pqp$</li>
+<li>OU:= $\lambda pq.ppq$</li>
+<li>SAS:= $\lamda p.p$ (si alors, sino) (TO REVIEW)</li>
+</ul>
+</li>
+</ul>
+<h2>Part 3 - Tuples, Liste et Vide? (TODO)</h2>
+<h2>Part 4 - Decrementation (TODO)</h2>
+<ol>
+<li>Fonction Phi: on créé un tuple et le k-ieme tuple, on </li>
+</ol>
+
+    </body>
+</html>

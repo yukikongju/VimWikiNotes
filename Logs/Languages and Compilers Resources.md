@@ -3,8 +3,8 @@
 ### Programming Languages
 
 - Lecture Notes:
-- Slides:
-- Video Lectures:
+- Slides: [CS242 - Programming Langauges Stanford (incomplete)](https://web.stanford.edu/class/cs242/materials.html)
+- Video Lectures, Slides, Recitations: [CSE 340 - Principles of Programming Languages F16 by Adam Doupe](https://adamdoupe.com/teaching/classes/cse340-principles-of-programming-languages-f16/)
 - Textbook:
 - Projects:
 - Exercices:

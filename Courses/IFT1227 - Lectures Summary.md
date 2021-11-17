@@ -13,11 +13,11 @@
 ### Semaine 3
 
 - [X] [IFT1227 - Week 3 Lecture 1: Blocs Combinatoires (Multiplexeur, Decodeur); Délai, Glitch et Horloge; Circuits Séquentiels](IFT1227 - Week 3 Lecture 1)
-- IFT1227 - Week 3 Lecture 2
+- [X] [IFT1227 - Week 3 Lecture 2: Circuits Sequentiel (Latch SR, Verrou D, Bascule D, Registers); Bascule avec signal (Enable, reset); circuits problématiques](IFT1227 - Week 3 Lecture 2)
 
 ### Semaine 4
 
-- IFT1227 - Week 4 Lecture 1
+- [X] [IFT1227 - Week 4 Lecture 1: Finite State Machines pour definir des circuits sequentiels](IFT1227 - Week 4 Lecture 1)
 - IFT1227 - Week 4 Lecture 2
 
 ### Semaine 5

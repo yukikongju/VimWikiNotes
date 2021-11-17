@@ -14,6 +14,16 @@
     * Rappel: Définitions Big O, Big Omega, Big Theta
     * Rappel: Théorèmes Limites 
     * Ordre conditionnel et Règle de l'harmonie: enlever la condition sur l'ordre
+    * Preuve de la règle de l'harmonie
+    * Opérations sur les ordres
     * Théorème Master
 
+- Chapitre 3: Algorithmes Voraces: Huffman, Matroids
 
+
+
+- Chapitre 4: Diviser pour régner: Fast Fourier
+
+
+
+- Chapitre 5: Programmation Dynamique
