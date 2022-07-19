@@ -5,6 +5,7 @@
 - Lecture Notes: [ETH Zurich - Design of Digital Circuits](https://safari.ethz.ch/digitaltechnik/spring2018/doku.php?id=schedule)
 - Slides:
 - Video Lectures: [ETH Zurich - Design of Digital Circuits](https://www.youtube.com/playlist?list=PL5Q2soXY2Zi_QedyPWtRmFUJ2F8DdYP7l)
+- Video Lectures: [Circuits II - Geoffrey Messier](https://www.youtube.com/playlist?list=PL7sWxFnBVJLXhKW6052SWuuVmHJtqjzWf)
 - Textbook:
 - Projects:
 - Exercices:

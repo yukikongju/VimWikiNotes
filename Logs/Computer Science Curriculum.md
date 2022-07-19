@@ -9,10 +9,11 @@
 - [Languages and Compilers Resources](Languages and Compilers Resources)
 - [Computer Architecture Resources](Computer Architecture Resources)
 - [Database Systems Resources](Database Systems Resources)
-- Network and Communications Resources
+- [Network and Communications Resources](Network and Communications Resources)
 - [Distributed Systems Resources](Distributed Systems Resources)
 
 - [Theory of Computation Ressources](Theory of Computation Ressources)
+
 - [Operational Research Ressources](Operational Research Ressources)
 
 ### Specialization
@@ -30,6 +31,7 @@
 - [Bioinformatic Resources](Bioinformatic Resources)
 - Quantitative Analysis Resources
 - [Quantum Computation Resources](Quantum Computation Resources)
+- [Business Intelligence Ressources](Business Intelligence Ressources)
 - [Software Engineering Resources](Software Engineering Resources)
 - [Embedded Systems Resources](Embedded Systems Resources)
 - [Cryptocurrency Resources](Cryptocurrency Resources)
@@ -38,6 +40,7 @@
 ### MIT
 
 - [MIT CS Curriculum](MIT CS Curriculum)
+- [University of Illinois StuDocu](https://www.studocu.com/en-us/institution/university-of-illinois-at-chicago/620)
 
 
 ### Ressources
@@ -50,6 +53,9 @@
 - [ACM Information Systems](https://www.acm.org/binaries/content/assets/education/curricula-recommendations/is2020.pdf)
 - [ACM Information Technology](https://www.acm.org/binaries/content/assets/education/curricula-recommendations/it2017.pdf)
 - [ACM Software Engineering](https://www.acm.org/binaries/content/assets/education/se2014.pdf)
+- [Comprehensive Guide to learn CS by Lane Wagner](https://blog.boot.dev/computer-science/comprehensive-guide-to-learn-computer-science-online/)
+- [My (5+5) self taught curriculum by ewig94](https://www.reddit.com/r/learnprogramming/comments/gsansp/my_55step_selftaught_cs_curriculum_updated/)
+- [A Superharsh guide for learning CS by Lesabotsy](https://www.reddit.com/r/learnprogramming/comments/ortnef/a_super_harsh_guide_to_learning_computer_science/)
 
 - [Marc Moreno Maza Courses](https://www.csd.uwo.ca/~mmorenom/teaching.html)
 - [Peter Habermehl Courses](https://www.irif.fr/~haberm//teaching.html)
@@ -61,6 +67,15 @@
 - [Anupam Gupta Courses](http://www.cs.cmu.edu/~anupamg/)
 - [Gragory Quenell Courses](https://www.mtholyoke.edu/courses/quenell/)
 - [Virgil Bistriceneanu Courses](http://www.cs.iit.edu/~virgil/)
+- [Zhi Zhang Courses](http://www.cs.fsu.edu/~zwang/#teaching)
+- [Afonso Bandeira COurses](https://people.math.ethz.ch/~abandeira/teaching.html)
+- [Ethan Blanton Courses on system programming](https://cse.buffalo.edu/~eblanton/course/)
 
+### Inspirations
 
+- Tsoding Daily
+- IppSec
+- George Hotz (geohotz)
+- Real Python
+- Jon 
 

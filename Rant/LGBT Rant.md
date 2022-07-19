@@ -7,3 +7,4 @@
 ## Transgender
 
 - What is the difference between gender and sex
+- Can transgender take part in competitive sports after hormone therapy

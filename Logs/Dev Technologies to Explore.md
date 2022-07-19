@@ -3,3 +3,10 @@
 ## DevOps
 
 - Dockers and Containers  
+- Rust
+
+## Hacking
+
+- Hack a Box Academy:
+
+

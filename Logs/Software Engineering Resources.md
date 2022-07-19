@@ -5,6 +5,7 @@
 - Lecture Notes:
 - Slides:
 - Video Lectures: [IFT3913 - Qualite du logiciel](https://classe.iro.umontreal.ca/c/ift3913/videos?a-state=42)
+- Website: [Saylor.org - CS302 - Software Engineering](https://learn.saylor.org/course/view.php?id=73)
 - Textbook:
 - Projects:
 - Exercices:

@@ -5,8 +5,10 @@
 - [Mechanical Physics Resources](Mechanical Physics Resources)
 - [Electromagnetism Physics Resources](Electromagnetism Physics Resources)
 - [Nuclear Physics Resources](Nuclear Physics Resources)
+- [Astrophysics Ressources](Astrophysics Ressources)
 - [Quantum Physics Ressources](Quantum Physics Ressources)
 - [Statistical Physics Ressources](Statistical Physics Ressources)
+- [General Relativity Ressources](General Relativity Ressources)
 
 ## Private Pilot Ground School 
 

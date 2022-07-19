@@ -1,6 +1,24 @@
 # Diary
 
+## 2022
+
+### February
+
+- [Making a cheatsheet during class](2022-02-24)
+
+### January
+
+- [A Review of my studying techniques](2022-01-19)
+- [Zettelkasten Note Taking Methods](2022-01-16)
+- [Principles of Bullet Journaling](2022-01-07)
+- [Processing, Encoding, Retrieving (incomplet)](2022-01-05)
+
 ## 2021
+
+### December
+
+- [Better Time Management](2021-12-15)
+- [Avoiding taking notes in class](2021-12-02)
 
 ### November
 

@@ -11,3 +11,8 @@
 - Exercices:
 - Exams:
 
+### C*-algebras and Compact Quantum Groups
+
+- Video Lectures: [C*-algebras and Compact Quantum Groups](https://www.youtube.com/playlist?list=PLq3E5oubNNoAZi6W7968tNkSnIGTt4hEn)
+
+

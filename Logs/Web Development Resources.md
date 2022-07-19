@@ -3,6 +3,7 @@
 ### Web Programming
 
 - Lecture Notes: [Stanford CS 193x - Web programming Fundamentals](https://web.stanford.edu/class/archive/cs/cs193x/cs193x.1176/lectures/)
+- Full Stack Open: https://fullstackopen.com/en/
 - Slides:
 - Video Lectures:
 - Textbook:

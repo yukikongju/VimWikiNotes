@@ -9,7 +9,7 @@ Exams: [Study Material and Old Exams](https://www.soa.org/education/exam-req/syl
 - Slides:
 - Video Lectures: [MIT 18.S096 - Topics in Mathematics with Applications in Finance](https://www.youtube.com/playlist?list=PLUl4u3cNGP63ctJIEC1UnZ0btsphnnoHR)
 - Video Series: [Financial Mathematics - The Logic of Risk](https://www.youtube.com/playlist?list=PLgCR5H4IzggF_w7l1WSYMaoDSZNNkk9gE)
-- Textbook:
+- Textbook: Springer
 - Case Studies: [MIT 18.S096 - Case Studies](https://ocw.mit.edu/courses/mathematics/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/case-studies/)
 - Exams:
 

@@ -3,6 +3,7 @@
 #### Computer Graphics
 
 - Slides: [CMU 15-462 Slides](http://15462.courses.cs.cmu.edu/fall2020/)
+- Website: [Stratch Pixel - Learn Computer Graphics from Scratch](https://www.scratchapixel.com/)
 - Video Lectures: [Keenan Crane CMU 15-462 - Computer Graphics](https://www.youtube.com/watch?v=W6yEALqsD7k&list=PL9_jI1bdZmz2emSh0UQ5iOdT2xRHFHL7E)
 - Video Lectures: [IFT3355 - Infographie](https://classe.iro.umontreal.ca/c/poulin_channel/videos?a-state=42)
 - Textbook:

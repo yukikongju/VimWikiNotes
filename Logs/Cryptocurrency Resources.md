@@ -15,6 +15,7 @@
 - Lecture Notes:
 - Slides and Video Lectures: [MIT MAS.S62 - Slides](https://ocw.mit.edu/courses/media-arts-and-sciences/mas-s62-cryptocurrency-engineering-and-design-spring-2018/lecture-notes/)
 - Video Lectures: [MIT MAS.S62 - Cryptocurrency Engineering and Design](https://www.youtube.com/playlist?list=PLUl4u3cNGP61KHzhg3JIJdK08JLSlcLId)
+- Website: [Saylor.org - CS120: bitcoin for developers I](https://learn.saylor.org/course/view.php?id=500)
 - Textbook:
 - Projects:
 - Exercices:

@@ -3,23 +3,16 @@
 ### Courses
 
 - [UdeM](UdeM)
-- Self Taught Courses
-
-## Research Papers
-
-
 
 ### Webinars
 
 - [Webinars Notes](Webinars Notes)
+- [Hack The Box](Hack The Box)
+- [Try Hack Me](Try Hack Me)
 
 ### Project
 
 - [Projects Completed](Projects Completed)
-
-### Dev
-
-- Vim Plugins and Installations
 
 ### Books
 

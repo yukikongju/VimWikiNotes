@@ -15,4 +15,5 @@
 ## List of questions subjects
 
 - [Common IELTS Essay Questions](https://ieltsliz.com/100-ielts-essay-questions/)
+- [Types of Essais](https://2012books.lardbucket.org/pdfs/successful-writing/s19-readings-examples-of-essays.pdf)
 

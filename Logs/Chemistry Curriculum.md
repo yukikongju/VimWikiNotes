@@ -4,7 +4,7 @@
 
 - [General Chemistry Resources](General Chemistry Resources)
 - [Biochemistry Resources](Biochemistry Resources)
-- Biology Resources
+- [Biology Resources](Biology Resources)
 - [Organic Chemistry Resources](Organic Chemistry Resources)
 - Inorganic Chemistry Resources
 

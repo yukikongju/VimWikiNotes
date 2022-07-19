@@ -9,7 +9,8 @@
 - [Chemistry Curriculum](Chemistry Curriculum)
 - [Economics Curriculum](Economics Curriculum)
 - [Medicine and Pharmacology Curriculum](Medicine and Pharmacology Curriculum)
-- [Psychology Curriculum ](Psychology Curriculum )
+- [Psychology Curriculum](Psychology Ressources)
+- [Engineering Curriculum](Engineering Curriculum)
 
 ## Webinars
 
@@ -24,6 +25,7 @@
 ## Dev Technologies
 
 - [Dev Technologies to Explore](Dev Technologies to Explore)
+- [Jekyll Themes](Jekyll Themes)
 
 ## Projects
 
@@ -49,4 +51,5 @@
 - [Bourses Udem](Bourses Udem)
 - [Connection SSH - Arcade IRO UdeM](Connection SSH - Arcade IRO UdeM)
 - [List of Probability and Statistics Video Ressources]()
+
 
